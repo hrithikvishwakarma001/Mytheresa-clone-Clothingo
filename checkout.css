@@ -1,0 +1,29 @@
+#form {
+    display: flex;
+    flex-direction: column;
+}
+#details{
+    width: 50%;
+    margin: auto;
+    padding: 5rem 0 .5rem 0;
+}
+#details input,select,button {
+    padding: .35rem;
+}
+#details  {
+
+}
+#proceedbtn {
+    display: block;
+    margin: auto;
+    margin-top: 2rem;
+    background-color: black;
+    color: white;
+    padding: .35rem .5rem .35rem .5rem ;
+  
+}
+#proceedbtn:hover{
+    background-color: white;
+    color: black;
+
+}
