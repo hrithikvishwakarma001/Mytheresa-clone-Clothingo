@@ -1,0 +1,275 @@
+html{
+    font-family:Arial,Helvetica,sans-serif;
+   
+}
+body{
+    padding:0;
+    margin: 0;
+    
+}
+
+.header-section{
+    border:1px solid red;
+    height:28vh;
+}
+#offer-text{
+ text-align: center;
+ color: red;
+ display: block;
+ transition: 1em
+}
+.landing-poster{
+   display: flex;
+   gap:2em;
+   /* border:1px solid blue; */
+   height:55vh;
+   width:75%;
+   margin: auto;
+   
+}
+.landing-poster div:nth-child(1){
+    color: #757575;
+    letter-spacing: .8px;
+    display: block;
+}
+.landing-poster div:nth-child(2) img{
+   height:25rem;
+   width:32rem
+}
+.below-landing-poster{
+    width:75%;
+    display: flex;
+    /* border:1px solid red; */
+    margin: auto;
+    margin-top: 22px;
+    gap:30px
+}
+.below-landing-poster ul{
+    line-height: 0;
+    padding: 0;
+}
+.below-landing-poster ul li{
+   
+    display: inline;
+    letter-spacing: .8px;
+  text-decoration: none;
+}
+.below-landing-poster ul li a{
+    list-style: none;
+    color:#757575;
+    text-decoration: none;
+    font-size: 12px;
+}
+.below-landing-poster>div:nth-child(2){
+    display: flex;
+    justify-content: center;
+    font-size: 12px; ;
+    margin-left: 10%;
+}
+.sort{
+    margin-top: 8px;
+    gap:200px
+}
+.sort >span{
+    color:#757575
+}
+.sort .select-sort select{
+  margin-left: 80px;
+  border: 1px solid white;
+  color:#757575
+}
+.sort .select-sort select:hover{
+    cursor: pointer;
+}
+.sort .pagination-button button{
+    border:none;
+    background-color: white;
+    color:#757575
+}
+.sort .pagination-button button:hover{
+    cursor: pointer;
+}
+.sort .pagination-button button:nth-child(1){
+    color: black;;
+    font-weight: bolder;
+}
+.sidebar_cards{
+   width:75%;
+   margin:auto;
+}
+.sidebar_cards{
+    display: flex;
+    gap:10px;
+}
+
+.sidebar_cards .sidebar{
+    width:27%;
+    height:90vh;
+    /* border:1px solid red; */
+}
+.sidebar_cards .cards{
+    width: 73%;
+    height:auto;
+    display: grid;
+    gap:10px;
+    grid-template-columns: repeat(3,1fr);
+    border:1px solid blue;
+}
+.sidebar-content >div h1{
+    font-size: 14px;
+    font-weight:lighter;
+    color:#757575;
+    text-align: left;
+}
+.sidebar-content .categories ul li a{
+    text-align: left;
+    text-decoration: none;
+    color:#757575;
+    line-height: 20px;
+    list-style: none;
+    letter-spacing: .8px;
+    font-weight: lighter;
+}
+.sidebar-content .categories ul li{
+    list-style: none;
+    line-height: 20px;
+    margin-top: 7px;
+}
+.sidebar-content .categories ul{
+    text-align: left;
+    margin: 0;
+    padding: 0;
+   
+}
+.sidebar-content .categories div{
+    margin-top: 7px;
+    margin-bottom: 12px;
+}
+.sidebar-content .accordion-trigger.active .icon-arrow-right-black {
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+.sidebar-content .accordion-trigger .icon-arrow-right-black {
+    float: right;
+    margin-right: 4px;
+    width: 7px;
+    height: 20px;
+    transition: transform .3s ease;
+}
+
+.sidebar-content .accordion-trigger .icon-arrow-right-black {
+    float: right;
+    margin-right: 4px;
+    width: 7px;
+    height: 20px;
+    transition: transform .3s ease;
+}
+.accordion-trigger span{
+    font-size: 15px;
+    font-weight:bold
+    
+}
+.search-icon input{
+   padding:12px;
+   width:91%;
+   border:0.5px solid #757575
+} 
+.search-icon input:hover{
+    cursor: pointer;
+}
+.check-box-givenchy input{
+    margin-top: 30px;
+}
+.check-box-givenchy:hover{
+    cursor: pointer;
+}
+.check-box-givenchy span{
+    color:#757575
+}
+.check-box-givenchy span:hover{
+    cursor: pointer;
+}
+.size-box{
+    height:200px;
+   
+    overflow: hidden;
+
+}
+.input-check-boxes{
+    height:100%;
+}
+.input-check-boxes input{
+    margin-top: 12px;
+    font-size: 5px;
+}
+
+.size-box .input-check-boxes{
+    overflow: auto;
+    font-size: 12px;
+    color:#757575
+}
+
+.color-box{
+    height:200px;
+ 
+    overflow: hidden;
+
+}
+.input-check-boxes{
+    height:100%;
+}
+.input-check-boxes input{
+    margin-top: 12px;
+    font-size: 5px;
+}
+
+.color-box .input-check-boxes{
+    overflow: auto;
+    font-size: 12px;
+    color:#757575
+}
+
+
+.pattern-box{
+    height:200px;
+   overflow: hidden;
+
+}
+.pattern-check-boxes{
+    height:100%;
+}
+.pattern-check-boxes input{
+    margin-top: 12px;
+    font-size: 5px;
+}
+
+.pattern-box .input-check-boxes{
+    overflow:auto;
+    font-size: 12px;
+    color:#757575
+}
+
+#arrow:hover{
+    cursor: pointer;
+}
+.cards> div{
+    border:1px solid red;
+    
+}
+.cards> div hr{
+    width:50%;
+    margin: 0;
+    margin-top: 2px;
+    margin-bottom: 4px;
+}
+.cards > div .bottom{
+    text-align: center;
+    line-height: 2px;
+}
+.cards > div .bottom img{
+    margin-bottom: 10px;
+}
+.cards img{
+    height:18rem;
+    
+}
