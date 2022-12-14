@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/register.css" />
+</head>
+<body>
+<div id="header"><h1 id="h1">HEADER</h1></div>
+<div id="login_failed_div" ></div>
+<div class="maincontainer">
+    <div class="childcontainer1">
+        <div class="secchildcontainer">
+            <h3 class="title">CREATE AN ACCOUNT</h4>
+            <p class="para">Please enter the following information to create your account.</p>
+            <div class="checkbox" >
+                <input type="Radio"><label for="" style="color: rgb(137, 134, 134);">Ms.</label></input>
+                <input type="Radio"><label for="" style="color: rgb(137, 134, 134);">Mrs.</label></input>
+                <input type="Radio"><label for="" style="color: rgb(137, 134, 134);">Mr.</label></input>
+            </div>
+            <div class="inputformregister">
+                <form action="" id="signupform">
+                    <select id="academictitle" style="color: rgb(137, 134, 134)" class="inputform2">
+                        <option >academic title</option>
+                        <option ></option>
+                        <option >Dr.</option>
+                        <option >Prof.</option>
+                        <option >Prof. Dr.</option>
+                    </select>
+                        <div><input type="text" placeholder="first name *" required class="inputform" id="first_name"></input></div>
+                        <div><input type="text" placeholder="last name *" required class="inputform" id="last_name"></div>
+                        <div><input type="email" placeholder="email address *" required class="inputform" id="email"></div>
+                        <div><input type="password" placeholder="password *" required class="inputform" id="password"></div>
+                        <div><input type="password" placeholder="confirm password *" required class="inputform"></div>
+                        <div class="marginclass">
+                            <p class="para"><input type="checkbox">
+                                From now on I will receive the Mytheresa Newsletter with selected fashion offers. If I do not wish to receive the newsletter, I can unsubscribe at any time free of charge at privacy@mytheresa.com.<br><br>
+                                I agree that Mytheresa may insert analytical web beacons into the newsletter and create a personalized user profile based on my purchase and usage behavior, including sending a notification when I have placed something in the shopping cart. Further details can be found in our Privacy Policy, clause 5. I understand that I can revoke my consent at any time by emailing privacy@mytheresa.com.
+                            </p>
+                            <p class="para">* required feilds</p>
+                        </div>
+                        <div id="submitbtn">
+                        <input type="submit"  id="register" value="REGISTER" >
+                        </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="childcontainer">
+        <div class="secchildcontainer">
+            <h3 class="title">ALREADY REGISTERED?</h4>
+            <P class="para">If you have an account with us,please log in.</P>
+            <div class="inputformlogin">
+                <form action="" id="signin_form">
+                    <div><input type="email" required placeholder="email address *" class="inputform" id="signin_email"></div>
+                    <div><input type="password" required placeholder="password *" class="inputform" id="signin_pwd"></div>
+                    <div><p class="para">* required fields</p></div>
+                    <div class="marginclass"><a href="#" class="para" >Forgot Your Password?</a></div>
+                    <div><input type="submit" value="LOGIN" id="loginbtn"></div>
+                    <div>
+                        <p class="para" style="letter-spacing: .8px;margin-left: 5px;">
+                            At Mytheresa, we keep your information secure. As a result, it will be necessary for you to log in to your account before you are able to place an order or change the information on your account. You will be asked to log in to complete your order even if you have already been greeted on the website.
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="footer"><h1 id="h1">FOOTER</h1></div>
+</body>
+</html>
+<script src="../js/register.js"></script>
