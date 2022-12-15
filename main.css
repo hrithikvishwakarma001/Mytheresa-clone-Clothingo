@@ -1,0 +1,156 @@
+.saleTime{
+    margin-top: 0.5rem;
+    height: 2rem;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.saleTime p{
+  font-family: Futura-Medium, Century Gothic, Gill Sans, Helvetica, sans-serif;
+  color: red;
+  font-size: 0.9rem;
+}
+.salePoster{
+    margin-top: 1rem;
+    height: 12.5rem;
+    /* border: 1px solid red; */
+    background-image: url('https://img.mytheresa.com/media/static/raw/cms/l/SM_Monetate_Images/15_Sale/FW21/WW_Sale_Wave50/ONSITE_BANNER_SALE_50_desktop_en_1x_20211119133215.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.landing{
+  height: 535px;
+  /* border: 1px solid red; */
+  background-image: url('https://img.mytheresa.com/media/static/raw/cms/l/WW_HP_2022_CW50/NEW_BIG/CW50_WW_HP_DESK_BIG_2x_20221213114037.jpg?imwidth=1180&imdensity=2');
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.land{
+  margin-bottom: 3rem;
+}
+.land-text{
+  font-family: Century Gothic, Gill Sans, Helvetica, sans-serif;
+  color: white;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+.land p{
+  font-family: Century Gothic, Gill Sans, Helvetica, sans-serif;
+  color: white;
+  font-size: 1rem;
+  margin-bottom: 3rem;
+}
+
+/* ------------------------- */
+
+.newArrival{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f6f6f6;
+  border-top: 2px solid #e8e8e8;
+  border-bottom: 2px solid #e8e8e8;
+  
+}
+.dont p,.dont h2{
+  color: black;
+  font-family: Century Gothic, Gill Sans, Helvetica, sans-serif;
+  margin-bottom: 1.5rem;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+.dont p{
+   margin-top: 2rem;
+}
+.dont h2{
+  font-size: 2rem;
+}
+
+/* ----------------------------------- */
+
+.twoBox{
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  line-height: 3rem;
+}
+.bo{
+  margin-top: 0.1rem;
+  text-align: center;
+  height: 10rem;
+  width: 30rem;
+}
+.bo p, .bo h2{
+  font-family: Century Gothic, Gill Sans, Helvetica, sans-serif;
+}
+.bo h2{
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+
+/* ------------------------------------------------- */
+
+.gallery{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  height: 80rem;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+}
+.gallery-1,.gallery-2{
+  text-align: center;
+  width: 36em;
+  height: 68rem;
+  /* border: 1px solid red; */
+}
+.gallery-1-1{
+  /* border: 1px solid red; */
+  width: 36em;
+  height: 60rem;
+  background-image: url('https://img.mytheresa.com/media/static/raw/cms/l/LIFE_HP_2022_CW50/Paris-Texas-ActboxTall_2x_20221212102147.jpg?imwidth=600&imdensity=2');
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 2.5rem;
+}
+
+.gallery-img{
+  /* border: 1px solid red; */
+  width: 36rem;
+  height: 18em;
+  background-image: url('https://img.mytheresa.com/media/static/raw/cms/l/WW_HP_2022_CW50/CW50_WW_HP_ActboxSmall_3_2x_20221212110651.jpg?imwidth=600&imdensity=2');
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 2.5rem;
+}
+.gallery-2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.vo{
+  margin-top: 4.5rem;
+  line-height: 3rem;
+  width: 25rem;
+}
+.gallery-img2{
+  margin-top: 4.5rem;
+  /* border: 1px solid red; */
+  width: 36rem;
+  height: 18em;
+  background-image: url('https://img.mytheresa.com/media/static/raw/cms/l/WW_HP_2022_CW50/CW50_WW_HP_ActboxSmall_4_2x_20221212110650.jpg?imwidth=600&imdensity=2');
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 2.7rem;
+}

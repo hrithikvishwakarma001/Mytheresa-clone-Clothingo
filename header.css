@@ -10,7 +10,7 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
-#page {
+.page {
   width: 1180px;
   margin-left: auto;
   margin-right: auto;
@@ -67,6 +67,7 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 #right li {
   border-top: 1px solid #bcbcbc;
@@ -83,7 +84,12 @@ li {
   color: #7e7e7e;
   display: flex;
 }
+#right li:hover{
+  color: #1b1b1b;
+  cursor: pointer;
+}
 .ri-heart-3-line {
+  /* further javascript --> none.js*/
   font-size: 18px;
   color: #e7e7e7;
   font-weight: 100;
