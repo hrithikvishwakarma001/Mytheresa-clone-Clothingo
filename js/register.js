@@ -30,7 +30,6 @@ signup_form.addEventListener("submit",function(event){
         alert("Account Created.");
         signup_form.reset();
         first_name.focus();
-        // location.href="home.html"
         }
         else{
             alert("Account is already present "); 
@@ -64,6 +63,5 @@ signin_form.addEventListener("submit",function(event){
             login_failed_div.innerHTML=null;
             signin_form.reset();
             signin_email.focus();
-        //    location.href="user.html";
         }
 })
