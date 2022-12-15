@@ -1,6 +1,6 @@
 
 *{
-    font-family:Futura-Medium,Century Gothic,Gill Sans,Helvetica,Arial,sans-serif;
+    font-family:Helvetica,Arial,sans-serif;
   }
   
   /* image slider */
@@ -316,3 +316,9 @@
     color: #757575;
   }
   
+#icons{
+    font-size: 22px;
+}
+#icons i{
+    margin-right: 10px;
+}
