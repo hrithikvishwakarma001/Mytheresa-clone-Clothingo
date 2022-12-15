@@ -5,6 +5,7 @@
   z-index: 100;
   /* border: 1px solid red; */
   /* display: none; */
+  display: none;
 }
 .just {
   background-color: #f2f2f2;
@@ -15,7 +16,7 @@
 }
 .just span {
   margin-right: 10rem;
-  margin-left: 1.4rem;
+  margin-left: 1.1rem;
   font-size: 13px;
   color: #2a2a2a;
   font-family: Futura-Medium, Century Gothic, Gill Sans, Helvetica,
@@ -24,7 +25,8 @@
 .box {
   display: flex;
   justify-content: space-between;
-  max-width: 22.2em;
+  max-width: 22em;
+  margin-left: 10px;
   /* border: 1px solid red; */
 }
 .left-box {
@@ -32,7 +34,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  line-height: 1.5rem;
+  line-height: 1.6rem;
   height: 8em;
   width: 8em;
   margin-top: 0.5em;
@@ -42,22 +44,271 @@
   margin-left: 1.4rem;
   font-size: 13px;
   color: #7a7a7a;
+  cursor: pointer;
+}
+.left-box span:hover {
+  color: #2a2a2a;
 }
 .poster {
   /* border: 1px solid red; */
-  width: 50.2rem;
+  width: 42.6rem;
+  height: 25.7rem;
   margin-left: 1.4rem;
   position: relative;
   left: 29.7em;
   bottom: 8.5em;
+  background: url('https://img.mytheresa.com/media/static/raw/cms/l/WW_HP_2022_CW50/WW_FLYOUTS/Cruise23_Flyout_Long_batch_01_2x_20221212121008.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
 }
-.poster img {
+/* .poster img {
   width: 85%;
   height: 100%;
-}
+  cursor: pointer;
+} */
 .bx{
   margin-top: -3em;
   color: #f2f2f2;
   position: relative;
   left: 3.1em;
+}
+
+.title-and-button{
+  -webkit-text-size-adjust: 100%;
+  color: #000;
+  /* visibility: hidden; */
+  width: 20rem;
+  list-style: none;
+  letter-spacing: .5px;
+  font-size: 13px;
+  white-space: nowrap;
+  font-family: Futura-Medium,Century Gothic,Gill Sans,Helvetica,Arial,sans-serif;
+  text-transform: uppercase;
+  box-sizing: inherit;
+  /* border: 1px solid red; */
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+.text{
+  -webkit-text-size-adjust: 100%;
+  /* visibility: hidden; */
+  list-style: none;
+  text-transform: uppercase;
+  box-sizing: inherit;
+  font-weight: 400;
+  color: #fff;
+  font-family: Futura-Medium,Century Gothic,Gill Sans,Helvetica,Arial,sans-serif;
+  font-size: 33px;
+  letter-spacing: .2px;
+  line-height: 1em;
+  text-align: center;
+  max-width: 90%;
+  white-space: normal;
+  margin: 0 auto 25px;
+}
+.button-wrapper{
+  -webkit-text-size-adjust: 100%;
+  color: #000;
+  /* visibility: hidden; */
+  list-style: none;
+  letter-spacing: .5px;
+  font-size: 13px;
+  white-space: nowrap;
+  font-family: Futura-Medium,Century Gothic,Gill Sans,Helvetica,Arial,sans-serif;
+  text-transform: uppercase;
+  box-sizing: inherit;
+}
+.button-wrapper a{
+  -webkit-text-size-adjust: 100%;
+  /* visibility: hidden; */
+  list-style: none;
+  white-space: nowrap;
+  box-sizing: inherit;
+  text-decoration: none;
+  display: inline-block;
+  z-index: 999;
+  font-family: Futura-Medium,Century Gothic,Gill Sans,Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  letter-spacing: 1.2px;
+  line-height: 17px;
+  text-transform: uppercase;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color .4s ease-out,border-color .4s ease-out,color .4s ease-out;
+  padding: 7px 20px;
+  width: auto;
+  color: #000;
+  background-color: #fff;
+  border-color: #757575;
+}
+.button-wrapper a::after{
+  position: relative;
+  bottom: 1px;
+  content: " \00BB";
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* -------------------------------- */
+
+.poster2{
+  width:30rem;
+  background-image: url('https://img.mytheresa.com/media/static/raw/cms/l/WW_HP_2022_CW50/WW_FLYOUTS/Flyout_Paris-Texas_2x_20221212121132.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  left: 42.3em;
+  bottom: 8.5em;
+}
+.box2{
+  display: flex;
+  justify-content: space-between;
+  max-width:37em;
+  /* border: 1px solid red; */
+  margin-left: 10px;
+}
+.just2{
+  background-color: #f2f2f2;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  width: 1180px;
+}
+.bx2{
+  margin-top: -3em;
+  color: #f2f2f2;
+  position: relative;
+  left: 9em;
+}
+
+
+
+/* ---------------------------------- */
+
+.poster3{
+background-image: url('https://img.mytheresa.com/media/static/raw/cms/l/WW_HP_2022_CW50/WW_FLYOUTS/CW50_Flyout_Regular_1_2x_20221212121208.jpg');
+}
+.poster4{
+  background-image: url('https://img.mytheresa.com/media/static/raw/cms/l/WW_HP_2022_CW50/WW_FLYOUTS/CW50_Flyout_1420x940_Winterboots_x2_20221213115119.jpg');
+}
+.poster5{
+  background-image: url('https://img.mytheresa.com/media/static/raw/cms/l/LIFE_FO_2022_CW49/CW49_WW_HP_Flyout_Regular_1_2x_20221205153706.jpg');
+}
+.poster6{
+  background-image: url('https://img.mytheresa.com/media/static/raw/cms/l/WW_HP_2022_CW50/WW_FLYOUTS/CW50_Flyout_Regular_2_2x_20221212121207.jpg');
+}
+.poster7{
+  background-image: url('https://img.mytheresa.com/media/static/raw/cms/l/LIFE_FO_2022_CW49/CW49_WW_HP_Flyout_Regular_2_2x_20221205153708.jpg');
+}
+
+.bx3{
+  position: relative;
+  left: 14.5em;
+}
+.bx4{
+  position: relative;
+  left: 19em;
+}
+.bx5{
+  position: relative;
+  left: 23em;
+}
+.bx6{
+  position: relative;
+  left: 28em;
+}
+.bx7{
+  position: relative;
+  left: 33.5em;
+}
+.bx8{
+  position: relative;
+  left: 40em;
+}
+.bx9{
+  position: relative;
+  left: 45.3em;
+}
+
+
+
+/* ------------------------------------------------------------ */
+
+.fastive{
+  /* border: 1px solid red; */
+  width: 1180px;
+}
+.fastive-box{
+  /* border: 1px solid red; */
+  width: 100%;
+  height: 89%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  place-items: center;
+  grid-gap: 1.1rem;
+}
+
+.grid{
+  padding:0px;
+  /* border: 1px solid rgb(255, 0, 183); */
+  cursor: pointer;
+  width: 280px;
+  height: 196px;
+  /* background-color: rgba(0,0,0,.5); */
+  /* opacity: 0; */
+  transition: all 350ms ease-in-out;
+}
+.g1{
+  background-image: url('//img.mytheresa.com/media/static/raw/cms/l/WW_HP_2022_CW43/Flyouts/Flyout_Festive_ASSETS_WW_01_2x_20221024103435.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.g2{
+  background-image: url('//img.mytheresa.com/media/static/raw/cms/l/WW_HP_2022_CW43/Flyouts/Flyout_Festive_ASSETS_WW_02_2x_20221024103436.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.g3{
+  background-image: url('//img.mytheresa.com/media/static/raw/cms/l/WW_HP_2022_CW43/Flyouts/Flyout_Festive_ASSETS_WW_03_2x_20221024103437.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.g4{
+  background-image: url('//img.mytheresa.com/media/static/raw/cms/l/WW_HP_2022_CW43/Flyouts/Flyout_Festive_ASSETS_WW_04_2x_20221024103437.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.g5{
+  background-image: url('//img.mytheresa.com/media/static/raw/cms/l/WW_HP_2022_CW43/Flyouts/Flyout_Festive_ASSETS_WW_05_2x_20221024103438.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.g6{
+  background-image: url('//img.mytheresa.com/media/static/raw/cms/l/WW_HP_2022_CW43/Flyouts/Flyout_Festive_ASSETS_WW_06_2x_20221024103437.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.g7{
+  background-image: url('///img.mytheresa.com/media/static/raw/cms/l/WW_HP_2022_CW43/Flyouts/Flyout_Festive_ASSETS_WW_07_2x_20221024103438.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.g8{
+  background-image: url('///img.mytheresa.com/media/static/raw/cms/l/WW_HP_2022_CW43/Flyouts/Flyout_Festive_ASSETS_WW_08_2x_20221024103438.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
