@@ -114,7 +114,7 @@ body{
     display: grid;
     gap:10px;
     grid-template-columns: repeat(3,1fr);
-    border:1px solid blue;
+    /* border:1px solid blue; */
 }
 .sidebar-content >div h1{
     font-size: 14px;
@@ -275,7 +275,7 @@ body{
     margin-top: 8px;
 }
 .cards img{
-    height:17rem; 
+    height:16rem; 
 }
 .cards img:hover{
     cursor: pointer;
@@ -294,7 +294,8 @@ body{
     margin: 0;
     padding: 0px;
     font-size: 40px;
-    color:rgb(218, 235, 249);
+    
+    color:rgb(223, 238, 251);
 }
 .cards > div .top p:hover{
     cursor: pointer;
@@ -392,6 +393,13 @@ body{
    
     color: black;
 }
+.arrival{
+    font-size: 10px;
+    color: #757575;
+}
+.cards > div{
+    border:1px solid aliceblue
+}
 
 footer{
     height: 60vh;
@@ -401,7 +409,7 @@ footer{
     margin-top: 30px;
 }
 
-@media all and (min-width:900px) and (max-width:1200px){
+/* @media all and (min-width:900px) and (max-width:1200px){
 
     .landing-poster{
     display: block;
@@ -413,4 +421,4 @@ footer{
     overflow: hidden;
     border-style: inset;
     }
-}
+} */
