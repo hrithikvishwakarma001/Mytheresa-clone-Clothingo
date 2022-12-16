@@ -88,3 +88,75 @@ var splide = new Splide("#main-slider", {
       modal.style.display = "none";
     }
   }
+
+
+  // append the data from the shop.html
+
+  let getDetails = JSON.parse(localStorage.getItem("card_details"));
+  // console.log(getDetails);
+
+  let image1 = document.querySelector(".image1");
+
+  function displayData(data) {
+    // cards.innerHTML="";
+   
+    data.forEach((item)=>{
+     let div1=document.createElement("div");
+     let div2=document.createElement("div");
+     div2.setAttribute("class","top")
+     let hr1=document.createElement("hr");
+     let hr2=document.createElement("hr");
+     let arrival=document.createElement("span");
+     arrival.innerText=item.product_button;
+      
+     let div3=document.createElement("div");
+     div3.setAttribute("class","bottom")
+     let image=document.createElement("img");
+     image.src=item.image;
+     image.addEventListener("click",()=>{
+     itemDetails(item);
+        
+     })
+
+     let brand=document.createElement("span")
+     brand.innerText="GIVENCHY";
+     let title=document.createElement("p")
+     title.innerText=item.product_name;
+     let price=document.createElement("h5");
+     price.innerText=item.price;
+     let heart=document.createElement("p");
+     heart.setAttribute("class","fav-symbol")
+     heart.innerHTML="&#9829;"
+    
+       
+    //  let div=document.createElement("div");
+    //  div.setAttribute("class","arrival")
+    //   div.append(hr1,arrival,hr2,heart)
+    //   div2.append(div,heart);
+    //   div3.append(image,brand,title,price);
+    //   div1.append(div2,div3)
+    //   cards.append(div1);
+
+     image1.append(image);
+
+    })
+    
+
+ // let mapped_data = data.map((item) => {
+ //   return ` 
+ //           <div class="hello">
+ //            <hr>
+ //           <div>
+ //            <span>${item.product_button}<span>
+ //           </div>
+ //           <hr>
+ //           <div>
+ //           <img src="${item.image}"
+ //           </div>
+ //           </div> 
+ //  `
+ // })
+ // cards.innerHTML=mapped_data.join(" ")
+
+}
+displayData(getDetails)
