@@ -146,6 +146,7 @@ footer{
   /* border: 1px solid red; */
   font-family: Futura-Medium,Century Gothic,Gill Sans,Helvetica,Arial,sans-serif;
   cursor: pointer;
+  margin-top: 20px;
 }
 .mail .wish-2 span{
  position: relative;

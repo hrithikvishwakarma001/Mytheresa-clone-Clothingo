@@ -14,6 +14,7 @@ nav {
   width: 1180px;
   margin: auto;
   height: 100%;
+  /* overflow: hidden; */
   /* border: 1px solid red; */
   background-color: #ffffff;
 }
@@ -42,6 +43,8 @@ nav {
   justify-content: flex-end;
   align-items: center;
   margin-bottom: 15px;
+  position: relative;
+  left: 0.5rem;
 }
 ul {
   list-style: none;

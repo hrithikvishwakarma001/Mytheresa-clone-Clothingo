@@ -34,13 +34,6 @@ function stickyNavFunc() {
 }
 window.addEventListener('scroll', stickyNavFunc);
 
-let popup = document.querySelector('.popup');
- 
-if(window.scrollY > 1){
-    popup.style.display = 'block';
-} else {
-    popup.style.display = 'none';
-}
 let heart2 = document.querySelector('.heart2');
 let wish2 = document.querySelector('.wish-2');
 
@@ -49,4 +42,20 @@ wish2.onmouseover = () => {
 }
 wish2.onmouseout = () => {
     heart2.style.color = '#e7e7e7';
+}
+
+// --------------------------------------------------
+
+let scrolltop = document.querySelector('#scrolltop');
+scrolltop.style.opacity = 0;
+
+scrolltop.onclick = () => {
+    window.scrollTo(0, 0);
+}
+window.onscroll = () => {
+    if (window.scrollY>500) {
+        scrolltop.style.opacity = 1;
+    } else {
+        scrolltop.style.opacity = 0;
+    }
 }

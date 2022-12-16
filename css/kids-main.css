@@ -1,0 +1,83 @@
+
+.twoKid{
+  width: 1180px;
+  height: 535px;
+  /* border: 1px solid red; */
+  background-image: url(/images/girl\ and\ boy.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+.twoKid2{
+  width: 1180px;
+  height: 250px;
+  background-image: url(/images/kids-cloths.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  margin-top: 2rem;
+
+}
+.kidSale{
+  width: 1180px;
+  height: 350px;
+  cursor: pointer;
+  margin-top: 3rem;
+  border-top:  1px solid #e5e5e5;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.kids1{
+   height: 300px;
+   /* border: 1px solid red; */
+   width: 36rem;
+   background-image: url('https://img.mytheresa.com/media/static/raw/cms/l/SM_Monetate_Images/15_Sale/SS21/Sale50/Kids_50/pocketbanner_kids_desktop_1_20210531160635.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.kids2{
+   height: 300px;
+   /* border: 1px solid red; */
+   width:36rem;
+   background-image: url('https://img.mytheresa.com/media/static/raw/cms/l/SM_Monetate_Images/12_Kids/PocketBanners/FW22/Pocket-banner_Festive-KW_Gifts-Kids_20221213174718.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   display: flex;
+   justify-content: center;
+   align-items: flex-end;
+}
+.kids1 div{
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.kid-sale{
+  color: rgb(0, 0, 0);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.kid-sale2{
+  color: rgb(254, 74, 74);
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-top: 5px;
+}
+.kids2 div{
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.kids2 h3{
+  color: rgb(255, 255, 255);
+  font-size: 1.9rem;
+  font-weight: 500;
+}
