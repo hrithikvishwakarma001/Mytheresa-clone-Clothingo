@@ -93,70 +93,117 @@ var splide = new Splide("#main-slider", {
   // append the data from the shop.html
 
   let getDetails = JSON.parse(localStorage.getItem("card_details"));
-  // console.log(getDetails);
+  console.log(getDetails);
+  var cartArr = JSON.parse(localStorage.getItem("cart")) || [];
+  console.log(cartArr);
+  var WishlistArr = JSON.parse(localStorage.getItem("wishlist")) || [];
+  console.log(WishlistArr);
 
   let image1 = document.querySelector(".image1");
+  let image2 = document.querySelector(".image2");
+  let image3 = document.querySelector(".image3");
+  let image4 = document.querySelector(".image4");
+  let image5 = document.querySelector(".image5");
+  let image6 = document.querySelector(".image6");
+  let image7 = document.querySelector(".image7");
+  let image8 = document.querySelector(".image8");
+  let brand = document.getElementById("brand");
+  let title = document.getElementById("title");
+  let price = document.getElementById("price");
+  let choose_size = document.getElementById("choose_size");
+  let size1 = document.getElementById("size1");
+  let size2 = document.getElementById("size2");
+  let size3 = document.getElementById("size3");
+  let size4 = document.getElementById("size4");
+  let cart = document.querySelector(".button_cart");
+  let wishlist = document.querySelector(".button_wishlist");
 
-  function displayData(data) {
-    // cards.innerHTML="";
-   
-    data.forEach((item)=>{
-     let div1=document.createElement("div");
-     let div2=document.createElement("div");
-     div2.setAttribute("class","top")
-     let hr1=document.createElement("hr");
-     let hr2=document.createElement("hr");
-     let arrival=document.createElement("span");
-     arrival.innerText=item.product_button;
-      
-     let div3=document.createElement("div");
-     div3.setAttribute("class","bottom")
-     let image=document.createElement("img");
-     image.src=item.image;
-     image.addEventListener("click",()=>{
-     itemDetails(item);
-        
-     })
+  const get_item=(data) => {
 
-     let brand=document.createElement("span")
-     brand.innerText="GIVENCHY";
-     let title=document.createElement("p")
-     title.innerText=item.product_name;
-     let price=document.createElement("h5");
-     price.innerText=item.price;
-     let heart=document.createElement("p");
-     heart.setAttribute("class","fav-symbol")
-     heart.innerHTML="&#9829;"
-    
+        // getting images
+        let image=document.createElement("img");
+        image.src=data.image;
+        let image11=document.createElement("img");
+        image11.src=data.image;
+        let image12=document.createElement("img");
+        image12.src=data.image;
+        let image13=document.createElement("img");
+        image13.src=data.image;
+        let image14=document.createElement("img");
+        image14.src=data.image;
+        let image15=document.createElement("img");
+        image15.src=data.image;
+        let image16=document.createElement("img");
+        image16.src=data.image;
+        let image17=document.createElement("img");
+        image17.src=data.image;
+  
+        // title 
+        let product=document.createElement("p")
+        product.innerText=data.product_name;
+
+        // price
+        let pprice=document.createElement("h5");
+        pprice.innerText="€ "+data.price;
+
+        // cart
+        cart.addEventListener('click',function(){
+          addToCart(data);
+        })
+
+        // wishlist
+        wishlist.addEventListener('click',function(){
+          addToWishlist(data);
+        })
+
        
-    //  let div=document.createElement("div");
-    //  div.setAttribute("class","arrival")
-    //   div.append(hr1,arrival,hr2,heart)
-    //   div2.append(div,heart);
-    //   div3.append(image,brand,title,price);
-    //   div1.append(div2,div3)
-    //   cards.append(div1);
+        image1.append(image);
+        image2.append(image11);
+        image3.append(image12);
+        image4.append(image13);
+        image5.append(image14);
+        image6.append(image15);
+        image7.append(image16);
+        image8.append(image17);
 
-     image1.append(image);
+        title.append(product);
 
-    })
-    
+        price.append(pprice);
 
- // let mapped_data = data.map((item) => {
- //   return ` 
- //           <div class="hello">
- //            <hr>
- //           <div>
- //            <span>${item.product_button}<span>
- //           </div>
- //           <hr>
- //           <div>
- //           <img src="${item.image}"
- //           </div>
- //           </div> 
- //  `
- // })
- // cards.innerHTML=mapped_data.join(" ")
+        // choose_size
+        // choose_size.append(data.choose_size);
+        size1.append(data.available_size);
+        size2.append(data.available_size2);
+        size3.append(data.available_size3);
+        size4.append(data.available_size4);
+
 
 }
-displayData(getDetails)
+
+get_item(getDetails);
+
+
+// add to cart
+function addToCart(data) {
+  // console.log(data);
+  data.quant=1;
+  // console.log(data)
+  cartArr.push(data);
+  alert(`${data.product_name} has been added to cart`);
+  // console.log(cartArr);
+  localStorage.setItem("cart",JSON.stringify(cartArr));
+}
+
+// add to Wishlist
+
+function addToWishlist(data) {
+  // console.log(data);
+  data.quant=1;
+  WishlistArr.push(data);
+  alert(`${data.product_name} has been added to Wishlist`);
+  // console.log(WishlistArr);
+  localStorage.setItem("wishlist",JSON.stringify(WishlistArr));
+}
+
+
+

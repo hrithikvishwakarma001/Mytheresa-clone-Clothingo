@@ -6,6 +6,8 @@ let details = document.querySelector("#details");
 
 let paypal_btn = document.querySelector("#paypal_btn");
 
+let checkout = document.querySelector("#checkout");
+
 cart.addEventListener('click',function(){
     // paypal.innerHTML="";
     paypal_btn.innerHTML=""; 
@@ -59,4 +61,8 @@ paypal.addEventListener('click',function(){
     details.innerHTML="";
     paypal_btn.innerHTML=
     `<button id="checkout">PROCEED TO CHECKOUT</button>`
+})
+
+checkout.addEventListener("click",function(){
+    window.location.href="../thankyou.html";
 })
