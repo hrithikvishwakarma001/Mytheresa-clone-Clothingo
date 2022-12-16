@@ -65,3 +65,52 @@ signin_form.addEventListener("submit",function(event){
             signin_email.focus();
         }
 })
+let arr=[
+    {
+        img:"https://img.mytheresa.com/240/240/90/jpeg/catalog/product/52/P00680925.jpg",
+        title:"AMI PARIS",
+        des:"Straight cotton gabardine chinos",
+        size:"S",
+        Item_no:"P00680925",
+        price:143,
+        quantity:1
+    },
+    {
+        img:"https://img.mytheresa.com/240/240/90/jpeg/catalog/product/73/P00556519.jpg",
+        title:"BALENCIAGA",
+        des:"Speed 3.0 sneakers",
+        size:"EU_ 40" ,
+        Item_no:"P00556519",
+        price:556,
+        quantity:1
+    },
+    {
+        img:"https://img.mytheresa.com/240/240/90/jpeg/catalog/product/52/P00680925.jpg",
+        title:"AMI PARIS",
+        des:"Straight cotton gabardine chinos",
+        size:"S",
+        Item_no:"P00680925",
+        price:143,
+        quantity:1
+    },
+    {
+        img:"https://img.mytheresa.com/240/240/90/jpeg/catalog/product/52/P00680925.jpg",
+        title:"AMI PARIS",
+        des:"Straight cotton gabardine chinos",
+        size:"S",
+        Item_no:"P00680925",
+        price:143,
+        quantity:1
+    },
+    {
+        img:"https://img.mytheresa.com/240/240/90/jpeg/catalog/product/52/P00680925.jpg",
+        title:"AMI PARIS",
+        des:"Straight cotton gabardine chinos",
+        size:"S",
+        Item_no:"P00680925",
+        price:143,
+        quantity:1
+    }
+]
+
+localStorage.setItem("cartitems",JSON.stringify(arr));
