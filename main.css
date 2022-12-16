@@ -1,16 +1,14 @@
 .saleTime{
     margin-top: 0.5rem;
     height: 2rem;
-    /* border: 1px solid red; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
     
 }
+
 .saleTime p{
   font-family: Futura-Medium, Century Gothic, Gill Sans, Helvetica, sans-serif;
   color: red;
   font-size: 0.9rem;
+  margin-left: 30rem;
 }
 .salePoster{
     margin-top: 1rem;
@@ -19,6 +17,7 @@
     background-image: url('https://img.mytheresa.com/media/static/raw/cms/l/SM_Monetate_Images/15_Sale/FW21/WW_Sale_Wave50/ONSITE_BANNER_SALE_50_desktop_en_1x_20211119133215.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    cursor: pointer;
 }
 .landing{
   height: 535px;
@@ -103,11 +102,12 @@
 
 .gallery{
   margin-top: 2rem;
-  margin-bottom: 2rem;
-  height: 80rem;
+  height: 68rem;
   /* border: 1px solid red; */
   display: flex;
   justify-content: space-between;
+  border-bottom: 1px solid #e8e8e8;
+  margin-bottom: 2rem;
 }
 .gallery-1,.gallery-2{
   text-align: center;
@@ -142,15 +142,65 @@
 .vo{
   margin-top: 4.5rem;
   line-height: 3rem;
-  width: 25rem;
+  width: 36rem;
+  border-top: 1px solid #e8e8e8;
+  padding-top: 2rem;
 }
 .gallery-img2{
-  margin-top: 4.5rem;
+  margin-top: 3.1rem;
   /* border: 1px solid red; */
   width: 36rem;
   height: 18em;
   background-image: url('https://img.mytheresa.com/media/static/raw/cms/l/WW_HP_2022_CW50/CW50_WW_HP_ActboxSmall_4_2x_20221212110650.jpg?imwidth=600&imdensity=2');
   background-size: cover;
   background-repeat: no-repeat;
-  margin-bottom: 2.7rem;
+  margin-bottom: 2.4rem;
+}
+
+/* ------------------------------------------- */
+
+.gallery-1-2{
+  background-image: url('https://img.mytheresa.com/media/static/raw/cms/l/WW_HP_2022_CW50/NEW_BIG/CW50_ActboxTall_2_2x_20221213120617.jpg?imwidth=600&imdensity=2');
+}
+.gallery-img-3{
+  background-image: url('https://img.mytheresa.com/media/static/raw/cms/l/WW_HP_2022_CW50/CW50_WW_HP_ActboxSmall_1_2x_20221212110608.jpg?imwidth=600&imdensity=2');
+}
+.gallery-img-4{
+  background-image: url('https://img.mytheresa.com/media/static/raw/cms/l/WW_HP_2022_CW50/CW50_WW_HP_ActboxSmall_2_2x_20221212110608.jpg?imwidth=600&imdensity=2');
+}
+
+/* ------------------------------------------------- */
+
+.last{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 2.5rem;
+}
+.cards{
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid red; */
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.cards div{
+  width: 17.5rem;
+  height: 17.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cards div img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.cards div p{
+  font-family: Century Gothic, Gill Sans, Helvetica, sans-serif;
+  text-align: center;
 }

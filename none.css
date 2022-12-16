@@ -1,8 +1,9 @@
 .popup {
   position: absolute;
   width: 65.9%;
-  height: 460px;
+  height: 459px;
   z-index: 100;
+  top: 13rem;
   /* border: 1px solid red; */
   /* display: none; */
   display: none;
@@ -210,31 +211,31 @@ background-image: url('https://img.mytheresa.com/media/static/raw/cms/l/WW_HP_20
 
 .bx3{
   position: relative;
-  left: 14.5em;
+  left: 14em;
 }
 .bx4{
   position: relative;
-  left: 19em;
+  left: 18.7em;
 }
 .bx5{
   position: relative;
-  left: 23em;
+  left: 22.5em;
 }
 .bx6{
   position: relative;
-  left: 28em;
+  left: 27.5em;
 }
 .bx7{
   position: relative;
-  left: 33.5em;
+  left: 33em;
 }
 .bx8{
   position: relative;
-  left: 40em;
+  left: 39.5em;
 }
 .bx9{
   position: relative;
-  left: 45.3em;
+  left: 44.5em;
 }
 
 
