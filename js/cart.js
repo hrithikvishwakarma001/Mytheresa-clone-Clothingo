@@ -83,13 +83,19 @@ function rendercartitems(data){
         let threep=document.createElement("span");
         threep.innerText=elem.size;
         three.setAttribute("id","size");
-        three.innerHTML="Size:"
+
+
+
+        three.innerHTML="Size: "
+
         three.append(threep);
 
 
         let four=document.createElement("div");
         let fourp=document.createElement("span");
-        fourp.innerText="Item_no"
+
+        four.innerText="Item_no: "
+
         four.setAttribute("id","item_no");
         fourp.innerText=elem.Item_no;
         four.append(fourp);

@@ -1,0 +1,41 @@
+.lifeland{
+    height: 535px;
+    width: 100%;
+    /* border: 1px solid red; */
+    background-image: url('https://img.mytheresa.com/media/static/raw/cms/l/Life_HP_2022_CW50/Big_FestiveNOV_LIFE_tablet_2x_20221205090529.jpg?imwidth=1024&imdensity=1,%20//img.mytheresa.com/media/static/raw/cms/l/Life_HP_2022_CW50/Big_FestiveNOV_LIFE_tablet_2x_20221205090529.jpg?imwidth=1024&imdensity=2%202x');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.lifeland > div{
+    text-align: center;
+}
+.lifeland > div h3{
+    font-size: 18px;
+    font-weight: 100;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.lifeland > div h1{
+    font-size: 55px;
+    font-weight: 100;
+    color: #fff;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.life-img{
+  background-image: url('https://img.mytheresa.com/media/static/raw/cms/l/Life_HP_2022_CW50/CW49_Life_HP_ActboxTall_1_2x_20221205090527.jpg?imwidth=600&imdensity=2');
+}
+.life-img-1{
+  background-image: url('https://img.mytheresa.com/media/static/raw/cms/l/Life_HP_2022_CW50/CW49_Life_HP_ActboxSmall_1_2x_20221205090528.jpg?imwidth=600&imdensity=2');
+}
+.life-img-2{
+  background-image: url('https://img.mytheresa.com/media/static/raw/cms/l/Life_HP_2022_CW50/CW49_Life_HP_ActboxSmall_2_2x_20221205090528.jpg?imwidth=600&imdensity=2');
+}
