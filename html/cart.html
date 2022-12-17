@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/cart.css">
+</head>
+<body>
+    <div id="shoppingbag">
+        <div><p style="font-family: Arial, Helvetica, sans-serif;font-weight: normal;
+            letter-spacing: 0.8px;">YOUR SHOPPING BAG</p></div>
+        <div>
+            <button id="sbtn" onclick="proceed()">PROCEED TO CHECKOUT</button>
+            <div id="pqs">
+                <b>Price</b>
+                <b>Quantity</b>
+                <b>Subtotal</b>
+            </div>
+        </div>
+    </div>
+    <div id="cartitems_wrapper"></div>
+
+    <div id="promotiondiv">
+        <div><p style="font-family: Arial, Helvetica, sans-serif;font-weight: normal;
+            letter-spacing: 0.8px;">YOUR CURRENT PROMOTIONS</p></div>
+        <div>
+            <p>Free shipping</p>
+        </div>
+    </div>
+
+    <div id="finaldiv">
+        <div id="price_wrapper">
+            <div id="coupon">
+                <div>
+                    <input type="text" placeholder="Gift Card/Store Credit/Promo Code" id="inputpromo">
+                </div>
+                <div>
+                    <button id="promobtn" style="font-family: Arial, Helvetica, sans-serif;font-weight: normal;
+                    letter-spacing: 0.8px;"><span>USE CODE</span></button>
+                </div>
+            </div>
+            <div id="total">
+                <div>
+                    <p style="color: rgb(145, 144, 144);">Subtotal: $ <span id="spansubtotal">0</span></p>
+                    <b>Grand Total: $<span id="spangrandtotal">0</span></b>
+                </div>
+                <p style="color: rgb(145, 144, 144);">VAT exception.VAT not included.Shipping not included.</p>
+            </div>
+        </div>
+
+
+        <div id="checkout">
+            <div>
+                <button id="checkoutbtn1"onclick="shopping()">CONTINUE SHOPPING</button>
+            </div>
+            <div>
+                <button id="checkoutbtn2" onclick="proceed()">PROCEED TO CHECKOUT</button>
+            </div>
+        </div>
+    </div>
+   
+</body>
+</html>
+<script src="../js/cart.js"></script>
