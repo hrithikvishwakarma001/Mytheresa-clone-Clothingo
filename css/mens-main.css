@@ -1,0 +1,129 @@
+*{
+  font-family: Futura-Medium,Century Gothic,Gill Sans,Helvetica,Arial,sans-serif;;
+}
+
+.landingPoster{
+  width: 1180px;
+  height: 535px;
+  background-image: url('https://img.mytheresa.com/media/static/raw/cms/l/MW_HP_2022_CW50/BIG1_NEW/DESKTOP_2X_20221213142316.jpg?imwidth=1180&imdensity=2');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.landingPoster div{
+  text-align: center;
+}
+.landingPoster p{
+  color: white;
+  font-size: 17px;
+}
+.landingPoster h2{
+  color: white;
+  font-size: 3.3rem;
+  font-weight: 500;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.slider{
+  margin-top: 50px;
+  height: 30rem;
+  width: 100%;
+  border: 1px solid red;
+  margin-bottom: 30px;
+}
+.landingPoster2{
+  width: 1180px;
+  height: 535px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.landingPoster2 div:nth-child(2){
+  background-image: url('https://img.mytheresa.com/media/static/raw/cms/l/MW_HP_2022_CW50/BIG2/BIG_2_2X_20221212123720.jpg?imwidth=1180&imdensity=2');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 55%;
+}
+.landingPoster2 .shoes{
+  background-color: black;
+  height: 100%;
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.landingPoster2  h1{
+  color: white;
+  font-size: 3.3rem;
+  font-weight: 500;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  line-height: 65px;
+  margin-left: 6rem;
+}
+.landingPoster2 h1:hover{
+  color: #999;
+  cursor: pointer;
+  transition: background-color .4s ease-out,border-color .4s ease-out,color .4s ease-out;
+  
+}
+.landingPoster2 p{
+  color: white;
+  font-size: 14px;
+  margin-bottom: 45px;
+  margin-left: 6rem;
+}
+.winter{
+  margin-left: 6rem;
+}
+.landingPoster3{
+  width: 1180px;
+  height: 535px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid red;
+}
+.landingPoster3 .off{
+  background-image: url('https://img.mytheresa.com/media/static/raw/cms/l/MW_HP_2022_CW49/BIG3/EN_ACTBOX1_DESKTOP_2x_20221205114710.jpg?imwidth=1180&imdensity=2');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 55%;
+}
+.landingPoster3 .shoes{
+  background-color: black;
+  height: 100%;
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.landingPoster3  h1{
+  color: white;
+  font-size: 3.3rem;
+  font-weight: 500;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  line-height: 65px;
+  margin-left: 6rem;
+}
+.landingPoster3 h1:hover{
+  color: #999;
+  cursor: pointer;
+  transition: background-color .4s ease-out,border-color .4s ease-out,color .4s ease-out;
+  
+}
+.landingPoster3 p{
+  color: white;
+  font-size: 14px;
+  margin-bottom: 45px;
+  margin-left: 6rem;
+}
