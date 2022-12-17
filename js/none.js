@@ -1,7 +1,7 @@
 let hiddenDiv = document.querySelectorAll('.popup');
 let title = document.querySelectorAll('#title ul li');
 
-console.log(hiddenDiv[0])
+// console.log(hiddenDiv[0])
 // console.log(title[0])
 for (let i = 0; i < hiddenDiv.length; i++) {
     hiddenDiv[i].onmouseover = () => {

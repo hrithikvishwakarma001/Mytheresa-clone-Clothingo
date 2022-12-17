@@ -27,13 +27,7 @@
   margin-top: 25px;
   margin-bottom: 25px;
 }
-.slider{
-  margin-top: 50px;
-  height: 30rem;
-  width: 100%;
-  border: 1px solid red;
-  margin-bottom: 30px;
-}
+
 .landingPoster2{
   width: 1180px;
   height: 535px;
@@ -88,7 +82,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 .landingPoster3 .off{
   background-image: url('https://img.mytheresa.com/media/static/raw/cms/l/MW_HP_2022_CW49/BIG3/EN_ACTBOX1_DESKTOP_2x_20221205114710.jpg?imwidth=1180&imdensity=2');

@@ -59,3 +59,60 @@ window.onscroll = () => {
         scrolltop.style.opacity = 0;
     }
 }
+
+// ----------------LINK----BUTTONS------------------------------------
+
+let buttons = document.querySelectorAll('#left div');
+console.log(buttons)
+
+// background-color: #f2f2f2;
+
+buttons.forEach((x) => {
+    x.onclick = () => {
+        buttons.forEach((item) => {
+            item.style.backgroundColor = 'white';
+        })
+        x.style.backgroundColor = '#f2f2f2';
+        if(x.innerHTML==='MEN'){
+            window.location.href='/html/men.html';
+        }
+        else if(x.innerHTML==='WOMEN'){
+            window.location.href='/home.html';
+        }
+        else if(x.innerHTML==='KIDS'){
+            window.location.href='/html/kids.html';
+        }
+        else if(x.innerHTML==='LIFE'){
+            window.location.href='/html/life.html';
+        }
+    }
+})
+
+let btn = document.querySelector('.button-wrapper');
+
+btn.onclick = () => {
+    window.location.href='/html/shop.html';
+}
+
+// smooth loading of the page when reloading the page or going to another page from the same website  
+
+window.onload = () => {
+    document.body.style.opacity = 1;
+    document.body.style.visibility = 'visible';
+}
+
+let logo = document.querySelector('#logo > div');
+logo.onclick = () => {
+    window.location.href='/home.html';
+}
+logo.onmouseover = () => {
+    logo.style.cursor = 'pointer';
+}
+let poster = document.querySelector('.salePoster');
+poster.onclick = () => {
+    window.location.href='/html/shop.html';
+}
+poster.onmouseover = () => {
+    poster.style.cursor = 'pointer';
+}
+
