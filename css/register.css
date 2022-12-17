@@ -4,16 +4,18 @@ body{
 }
   .maincontainer{
     height: auto;
-    width: 80%;
+    width: 1180px;
     margin: auto;
     display: flex;
     justify-content: space-evenly;
+    border-bottom: 1px solid rgb(137, 134, 134);
+    padding-bottom: 50px;
   }
   @media all and (min-width:1px) and (max-width:800px){
     .maincontainer{
       display: block;
       height: auto;
-      width: 80%;
+      width: 1180px;
       margin: auto;
     }
     .childcontainer1{
@@ -39,15 +41,18 @@ body{
   font-family:Copperplate Gothic
 } */
 
-.title{
+.registertitle{
   font-family: Arial,Helvetica,sans-serif;
   color: rgb(68, 65, 65);
   font-weight: normal;
   letter-spacing: 1.5px;
+  margin-bottom: 10px;
 }
 .para{
   color: rgb(137, 134, 134);
   font-family:Helvetica;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .inputform{
   width:80%;
@@ -58,7 +63,7 @@ body{
   border: 1px solid rgb(195, 192, 192);
 }
 .inputform2{
-  width:87%;
+  width:80%;
   padding: 13px  15px;
   letter-spacing: .8px;
   font-size: 14px;
@@ -97,7 +102,7 @@ body{
   letter-spacing: .8px;
 }
 #login_failed{
-  width: 72%;
+  width: 1180px;
   height: 40px;
   margin: auto;
   border: 1px solid red;
@@ -120,4 +125,8 @@ body{
   height: 250px;
   border: 1px solid rgb(81, 79, 79);
   margin-top: 50px;
+}
+.checkbox{
+  margin-top: 10px;
+  margin-bottom: 10px;
 }

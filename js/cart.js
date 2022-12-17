@@ -83,11 +83,7 @@ function rendercartitems(data){
         let threep=document.createElement("span");
         threep.innerText=elem.size;
         three.setAttribute("id","size");
-
-
-
         three.innerHTML="Size: "
-
         three.append(threep);
 
 
