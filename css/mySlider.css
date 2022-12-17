@@ -1,0 +1,172 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: Verdana, sans-serif;
+	margin: 0;
+}
+.mySlides {
+	display: none;
+  /* border: 1px solid red; */
+
+}
+img {
+	vertical-align: middle;
+}
+.slider{
+  margin-top: 50px;
+  height: 35rem;
+  width: 100%;
+  /* border: 1px solid rgb(255, 0, 0); */
+  margin-bottom: 50px;
+}
+.slider>div:nth-child(1){
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.slider h1{
+font-weight: 100;
+}
+.slider>div:nth-last-child(1){
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-top: 25px;
+}
+/* Slideshow container */
+.slideshow-container {
+	width: 1180px;
+	position: relative;
+	margin: auto 0;
+  height: 27rem;
+  /* border: 1px solid rgb(180, 176, 176); */
+}
+.div-container{
+  display: flex;
+  justify-content: space-between;
+  width: 93%;
+  height: 100%;
+  margin: auto;
+}
+.div-container>div{
+   width:260px;
+   height: 27rem;
+   /* border: 1px solid rgb(136, 0, 255); */
+	 text-align: center;
+}
+.div-container>div>img{
+	width: 100%;
+	margin-bottom: 10px;
+}
+.div-container>div>p{
+	margin-bottom: 5px;
+}
+.icon-star-grey {
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20viewBox%3D%220%200%2090%2084%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%20%20%20%20%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M73.4652%2080.6617C73.5983%2081.2871%2073.4322%2081.9374%2073.0135%2082.4298C72.5948%2082.9221%2071.9688%2083.2032%2071.3116%2083.194C70.9449%2083.1904%2070.5852%2083.0965%2070.2661%2082.921L44.9229%2068.9251L19.5797%2082.921C18.839%2083.3336%2017.9181%2083.2853%2017.2275%2082.7976C16.5369%2082.3098%2016.2053%2081.4736%2016.3806%2080.6617L22.2482%2052.9125L0.712731%2033.8216C0.0804729%2033.2654%20-0.157246%2032.4005%200.105391%2031.6121C0.368027%2030.8236%201.08218%2030.2581%201.92996%2030.1673L30.9092%2027.0133L42.9566%201.22019C43.3116%200.476125%2044.0788%200%2044.9229%200C45.7669%200%2046.5342%200.476125%2046.8892%201.22019L58.9365%2027.0133L87.9158%2030.1673C88.7635%2030.2581%2089.4777%2030.8236%2089.7403%2031.6121C90.003%2032.4005%2089.7653%2033.2654%2089.133%2033.8216L67.5975%2052.9125L73.4652%2080.6617ZM43.8501%2064.6646C44.5172%2064.2935%2045.3366%2064.2935%2046.0037%2064.6646L68.257%2076.9622L63.1072%2052.5945C62.9491%2051.8663%2063.1983%2051.1111%2063.7626%2050.608L82.6764%2033.8372L57.2396%2031.0623C56.483%2030.9816%2055.8255%2030.5211%2055.5074%2029.8493L44.9269%207.16468L34.3464%2029.8493C34.0283%2030.5211%2033.3708%2030.9816%2032.6142%2031.0623L7.17741%2033.8372L26.0912%2050.608C26.6555%2051.1111%2026.9047%2051.8663%2026.7466%2052.5945L21.5968%2076.9622L43.8501%2064.6646Z%22%20fill%3D%22%23B1B1B1%22%2F%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	margin-left: 5px;
+}
+
+.arrival{
+	width: 100%;
+	height: 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px ;
+	margin-bottom: 20px;
+}
+.arrival img{
+	width: 105px;
+}
+
+
+
+/* Next & previous buttons */
+.prev,
+.next {
+	cursor: pointer;
+	position: absolute;
+	top: 40%;
+	width: auto;
+	margin-top: -22px;
+	color: rgb(0, 0, 0);
+	font-size: 60px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+  font-weight: 100;
+}
+
+/* Position the "next button" to the right */
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+/* Caption text */
+.text {
+	color: #f2f2f2;
+	font-size: 15px;
+	padding: 8px 12px;
+	position: absolute;
+	bottom: 8px;
+	width: 100%;
+	text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+	color: #f2f2f2;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+	background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@keyframes fade {
+	from {
+		opacity: 0.4;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+	.prev,
+	.next,
+	.text {
+		font-size: 11px;
+	}
+}
