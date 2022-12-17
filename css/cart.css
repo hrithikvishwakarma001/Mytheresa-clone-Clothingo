@@ -3,7 +3,7 @@ body{
 }
 #shoppingbag{
     border-bottom: 1px solid rgb(181, 179, 179);
-    width: 75%;
+    width: 1180px;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -27,7 +27,7 @@ body{
     justify-content: space-between;
 }
 #cartitems_wrapper{
-    width: 75%;
+    width: 1180px;
     margin: auto;
     margin-top: 30px;
     padding-bottom: 30px;
@@ -55,13 +55,15 @@ body{
 }
 .font_unique{
     margin-top: 0px;
-    margin-bottom: -10px;
+    margin-bottom: 10px;
     font-family: Arial, Helvetica, sans-serif;font-weight: normal;
     letter-spacing: 0.8px;
 }
 #item_no,#size{
     color:rgb(98, 96, 96);
+    margin-top: 10px;
     margin-bottom: 10px;
+    /* border: 1px solid red; */
 }
 
 #desc,.price{
@@ -75,7 +77,7 @@ body{
     display: block;
     padding-top: 9px;
     border: none;
-    margin-left: -8px;
+    margin-left: 0px;
 }
 #cross:hover{
     cursor: pointer;
@@ -89,6 +91,7 @@ body{
     border:none;
     margin-right: 10px;
     font-size:18px;
+    padding: 4px;
     color: rgb(87, 85, 85);
 }
 .asbtn:hover{
@@ -96,15 +99,17 @@ body{
     color:black;
 }
 #promotiondiv{
-    width: 75%;
+    width: 1180px;
     margin: auto;
     border-bottom: 1px solid rgb(158, 152, 152);
+    padding-bottom: 20px;
 }
 #promotiondiv>div:nth-child(2){
     color:rgb(158, 152, 152);
+    margin-top: 5px;
 }
 #finaldiv{
-    width: 75%;
+    width: 1180px;
     margin: auto;
     margin-top: 20px;
     padding-bottom: 40px;
@@ -116,6 +121,7 @@ body{
 }
 #coupon{
     display: flex;
+    margin-top: 10px;
 }
 #inputpromo{
     width: 350px;
@@ -137,6 +143,7 @@ body{
 #checkout{
     display: flex;
     justify-content: space-between;
+    margin-top: 25px;
 }
 /* font-family: Arial, Helvetica, sans-serif;font-weight: normal; */
                     /* letter-spacing: 0.8px; */
@@ -152,6 +159,11 @@ body{
 #checkoutbtn1:hover{
     cursor: pointer;
     background-color: rgb(204, 200, 200);
+}
+#spanptotal{
+    /* border: 1px solid red; */
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 #checkoutbtn2{
     width: 220px;

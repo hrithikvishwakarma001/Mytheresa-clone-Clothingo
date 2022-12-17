@@ -89,7 +89,9 @@ function rendercartitems(data){
 
         let four=document.createElement("div");
         let fourp=document.createElement("span");
+
         four.innerText="Item_no: "
+
         four.setAttribute("id","item_no");
         fourp.innerText=elem.Item_no;
         four.append(fourp);
