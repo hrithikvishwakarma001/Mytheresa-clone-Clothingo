@@ -72,6 +72,8 @@
     width: 78%;
     margin: auto;
     justify-content: space-around;
+    margin-top: 50px;
+    margin-bottom: 50px;
     /* border: 1px solid green; */
   }
   /* image div */

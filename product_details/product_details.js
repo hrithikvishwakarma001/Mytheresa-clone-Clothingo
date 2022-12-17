@@ -198,7 +198,7 @@ function addToCart(data) {
 
 function addToWishlist(data) {
   // console.log(data);
-  data.quant=1;
+  data.quantity=1;
   WishlistArr.push(data);
   alert(`${data.product_name} has been added to Wishlist`);
   // console.log(WishlistArr);
