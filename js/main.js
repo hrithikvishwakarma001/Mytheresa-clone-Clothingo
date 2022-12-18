@@ -101,7 +101,7 @@ window.onload = () => {
     document.body.style.visibility = 'visible';
 }
 
-let logo = document.querySelector('#logo > div');
+let logo = document.querySelector('#logo > div > img');
 logo.onclick = () => {
     window.location.href='/home.html';
 }
