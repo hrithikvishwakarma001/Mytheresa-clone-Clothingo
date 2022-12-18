@@ -488,7 +488,12 @@ hr{
 .icon:hover{
     cursor: pointer;
 
-    .landing-poster{
+    
+} 
+.mypage:hover{
+  cursor: pointer;
+}
+.landing-poster{
     display: block;
     unicode-bidi: isolate;
     margin-block-start: 0.5em;
@@ -498,12 +503,17 @@ hr{
     overflow: hidden;
     border-style: inset;
     }
-} */
-
 hr{
     width: 1180px;
     margin: auto;
     margin-top: 20px;
     margin-bottom: 20px;
 
+}
+.my-pagination-liner{
+    width:1180px;
+    margin:auto;
+    display: flex;
+
+    justify-content: flex-end;
 }
