@@ -189,5 +189,5 @@ window.onload = () => {
     document.body.style.visibility = 'visible';
 let checkoutbtn2 = document.getElementById("checkoutbtn2");
 checkoutbtn2.onclick=()=>{
-    location.href="payment.html"
+    location.href="checkout.html"
 }
