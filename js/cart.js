@@ -184,3 +184,7 @@ function proceed(){
 function shopping(){
     alert('go to shopping page')
 }
+window.onload = () => {
+    document.body.style.opacity = 1;
+    document.body.style.visibility = 'visible';
+}
