@@ -66,3 +66,13 @@ paypal.addEventListener('click',function(){
 checkout.addEventListener("click",function(){
     window.location.href="../thankyou.html";
 })
+
+window.onload=()=>{
+    document.body.style.opacity=1;
+    document.body.style.visibility="visible";
+    
+}
+
+checkout.onclick=()=>{
+    location.href="thankyou.html"
+}

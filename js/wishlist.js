@@ -1,5 +1,5 @@
 
-var cartArr = JSON.parse(localStorage.getItem("cart")) || [];
+var cartArr = JSON.parse(localStorage.getItem("cartitems")) || [];
 console.log(cartArr);
 var WishlistArr = JSON.parse(localStorage.getItem("wishlist")) || [];
 console.log(WishlistArr);
@@ -73,5 +73,5 @@ function addToCart(data) {
     data.quantity=1;
     cartArr.push(data);
     alert(`${data.product_name} has been added to cart`);
-    localStorage.setItem("cart",JSON.stringify(cartArr));
+    localStorage.setItem("cartitems",JSON.stringify(cartArr));
   }
