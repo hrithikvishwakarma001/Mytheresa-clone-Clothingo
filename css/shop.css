@@ -22,8 +22,7 @@ body{
    display: flex;
    gap:2em;
    /* border:1px solid blue; */
-   height:55vh;
-   width:75%;
+   width:1180px;
    margin: auto;
    
 }
@@ -33,11 +32,10 @@ body{
     display: block;
 }
 .landing-poster div:nth-child(2) img{
-   height:25rem;
-   width:32rem
+   width:30rem
 }
 .below-landing-poster{
-    width:75%;
+    width:1180px;
     display: flex;
     /* border:1px solid red; */
     margin: auto;
@@ -95,7 +93,7 @@ body{
     font-weight: bolder;
 }
 .sidebar_cards{
-   width:75%;
+   width:1180px;
    margin:auto;
 }
 .sidebar_cards{
@@ -104,17 +102,16 @@ body{
 }
 
 .sidebar_cards .sidebar{
-    width:27%;
-    height:90vh;
+  
     /* border:1px solid red; */
 }
 .sidebar_cards .cards{
-    width: 73%;
+    width:1100px;
     height:auto;
     display: grid;
     gap:10px;
     grid-template-columns: repeat(3,1fr);
-    /* border:1px solid blue; */
+    border:1px solid blue;
 }
 .sidebar-content >div h1{
     font-size: 14px;
@@ -253,10 +250,7 @@ body{
 #arrow:hover{
     cursor: pointer;
 }
-.cards> div{
-    /* border:1px solid red; */
-    
-}
+
 .cards> div hr{
     width:80%;
     margin: 0;
@@ -301,7 +295,7 @@ body{
     cursor: pointer;
 }
 .pagination-liner{
-   width:75%;
+   width:1180px;
    margin:auto
 }
 .pagination-liner div{
@@ -321,13 +315,15 @@ body{
     font-weight: bold;
 }
 .bottom-posters{
-    width:75%;
+    width:1180px;
     margin: auto;
     margin-top: 20px;
     display: flex;
     gap:20px;
     text-align: center;
-    position: relative
+    position: relative;
+    /* border-bottom: 1px solid #757575; */
+    margin-bottom: 50px;
 }
 .bottom-posters img{
     width:35rem
@@ -363,13 +359,9 @@ body{
     color:white;
     font-weight: lighter;
 }
-.below-poster-hr{
-    width:75%;
-    margin: auto;
-    margin-top: 18px;
-}
+
 .above-footer{
-    width:75%;
+    width:1180px;
     margin: auto;
     margin-top: 30px;
     text-align: center;
@@ -401,13 +393,6 @@ body{
     border:1px solid aliceblue
 }
 
-footer{
-    height: 60vh;
-    width:75%;
-    margin: auto;
-    border:1px solid black;
-    margin-top: 30px;
-}
 
 /* @media all and (min-width:900px) and (max-width:1200px){
 
@@ -422,3 +407,10 @@ footer{
     border-style: inset;
     }
 } */
+
+hr{
+    width: 1180px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

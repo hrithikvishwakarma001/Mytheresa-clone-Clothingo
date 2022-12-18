@@ -63,7 +63,7 @@ window.onscroll = () => {
 // ----------------LINK----BUTTONS------------------------------------
 
 let buttons = document.querySelectorAll('#left div');
-console.log(buttons)
+// console.log(buttons)
 
 // background-color: #f2f2f2;
 

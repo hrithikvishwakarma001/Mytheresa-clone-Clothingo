@@ -5,7 +5,7 @@ gotoregisterpage.addEventListener("click",function(){
 
 
 
-console.log(gotoregisterpage)
+// console.log(gotoregisterpage)
 let signin_email=document.querySelector("#email");
 let signin_pwd=document.querySelector("#pwd");
 let formData=JSON.parse(localStorage.getItem("signup_data"));
