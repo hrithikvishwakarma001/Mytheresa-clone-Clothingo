@@ -119,3 +119,28 @@ window.onload = () => {
     document.body.style.visibility = 'visible';
 
 }
+let buttons = document.querySelectorAll('#left div');
+console.log(buttons)
+
+// background-color: #f2f2f2;
+
+buttons.forEach((x) => {
+    x.onclick = () => {
+        buttons.forEach((item) => {
+            item.style.backgroundColor = 'white';
+        })
+        x.style.backgroundColor = '#f2f2f2';
+        if(x.innerHTML==='MEN'){
+            window.location.href='/html/men.html';
+        }
+        else if(x.innerHTML==='WOMEN'){
+            window.location.href='/home.html';
+        }
+        else if(x.innerHTML==='KIDS'){
+            window.location.href='/html/kids.html';
+        }
+        else if(x.innerHTML==='LIFE'){
+            window.location.href='/html/life.html';
+        }
+    }
+})
