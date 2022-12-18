@@ -1,0 +1,89 @@
+
+#main{
+    width: 75%;
+    margin: auto;
+    /* border: 1px solid red; */
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3,31%);
+    gap: 2%;
+    text-align: center;
+}
+
+.photo{
+    width: 100%;
+    height: 50%;
+}
+
+.brand{
+    font-size: 16px;
+    margin-top: -3px;
+}
+
+.title{
+    font-size: 14px;
+    color: #757575;
+    margin-top: -15px;
+}
+
+.price{
+    margin-top: -2px;
+    font-weight: bold;
+}
+
+.size{
+    font-size: 15px;
+}
+
+#btn{
+    width: 70%;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+}
+#btn:active {
+    background-color: #3f423f;
+    box-shadow: 0 5px #666;
+    transform: translateY(2px);
+  }
+.Remove{
+    /* margin-left: 45px; */
+    font-size: 13px;
+    /* text-align: center; */
+    width: 30%;
+    border: 1x solid green;
+    margin: auto;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.Remove:active {
+  transform: translateY(4px);
+}
+
+#number{
+    font-size: 16px;
+    color: #757575;
+}
+
+@media (max-width:800px){
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(2,49%);
+        gap: 2%;
+        text-align: center;
+    }
+}
+@media (max-width:550px){
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(1,90%);
+        text-align: center;
+    }
+}

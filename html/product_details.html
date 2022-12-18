@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./product_details.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.1/dist/css/themes/splide-skyblue.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.1/dist/js/splide.min.js">
+    </script>
+
+    <!-- font awesome  && google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Damion&family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/035c340386.js" crossorigin="anonymous"></script>
+
+<body>
+
+  <div id="main">
+
+    <div id="image">
+      <section id="main-slider" class="splide" aria-label="My Awesome Gallery">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <div class="image1" id="sslide"></div>
+                <!-- <img
+                  class="image1"
+                  id="sslide"
+                  <!-- src="https://img.mytheresa.com/1088/1088/66/jpeg/catalog/product/02/P00766526.jpg"
+                  alt="" -->
+                /> -->
+              </li>
+              <li class="splide__slide">
+                <div class="image5" id="sslide"></div>
+                <!-- <img
+                  id="sslide"
+                  src="https://img.mytheresa.com/1088/1088/66/jpeg/catalog/product/02/P00766526_b1.jpg"
+                  alt=""
+                /> -->
+              </li>
+              <li class="splide__slide">
+                <div class="image6" id="sslide"></div>
+                <!-- <img
+                  id="sslide"
+                  src="https://img.mytheresa.com/1088/1088/66/jpeg/catalog/product/02/P00766526_d2.jpg"
+                  alt=""
+                /> -->
+              </li>
+              <li class="splide__slide">
+                <div class="image2" id="sslide"></div>
+                <!-- <img
+                  id="sslide"
+                  src="https://img.mytheresa.com/1088/1088/66/jpeg/catalog/product/02/P00766526_d1.jpg"
+                  alt=""
+                /> -->
+              </li>
+            </ul>
+          </div>
+        </section>
+    
+        <ul id="thumbnails" class="thumbnails">
+          <li class="thumbnail">
+            <div class="image3"></div>
+            <!-- <img src="https://img.mytheresa.com/1088/1088/66/jpeg/catalog/product/02/P00766526.jpg" alt="" /> -->
+          </li>
+          <li class="thumbnail">
+            <div class="image7"></div>
+            <!-- <img src="https://img.mytheresa.com/1088/1088/66/jpeg/catalog/product/02/P00766526_b1.jpg" alt="" /> -->
+          </li>
+          <li class="thumbnail">
+            <div class="image8"></div>
+            <!-- <img src="https://img.mytheresa.com/1088/1088/66/jpeg/catalog/product/02/P00766526_d2.jpg" alt="" /> -->
+          </li>
+          <li class="thumbnail">
+            <div class="image4"></div>
+            <!-- <img src="https://img.mytheresa.com/1088/1088/66/jpeg/catalog/product/02/P00766526_d1.jpg" alt="" /> -->
+          </li>
+        </ul>
+    </div>
+
+    <div id="info">
+
+      <p id="brand">GIVENCHY</p>
+
+      <p id="title"></p>
+
+      <p id="price"></p>
+
+      <p id="tax">VAT exception. VAT not included.</p>
+      <p id="tax1">item no. P00766526</p>
+
+      <!-- size chart -->
+      <div id="size_div">
+
+        <select id="size">
+          <option id="choose_size">Choose Your Size</option>
+          <option id="size1"></option>
+          <option id="size2"></option>
+          <option id="size3"></option>
+          <option id="size4"></option>
+        </select>
+
+        <!-- Trigger/Open The Modal -->
+        <button id="myBtn"><u>open size chart</u></button>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="size_key">Size Key</p>
+
+            <!-- chart -->
+            <table id="table">
+
+              <tr>
+                <th></th>
+                <th></th> 
+                <th></th>
+                <th></th>
+                <th></th> 
+                <th></th>
+                <th></th>
+                <th></th> 
+                <th></th>
+                <th></th>
+                <th></th>
+              </tr>
+
+              <tr>
+                <td>Europe</td>
+                <td>34</td>
+                <td>35</td>
+                <td>36</td>
+                <td>37</td>
+                <td>38</td>
+                <td>39</td>
+                <td>40</td>
+                <td>41</td>
+                <td>42</td>
+                <td>43</td>
+              </tr>
+
+              <tr>
+                <td>USA</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+                <td>13</td>
+              </tr>
+
+              <tr>
+                <td>UK</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+              </tr>
+
+              <tr>
+                <td>Australia</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+              </tr>
+
+              <tr>
+                <td>Japan</td>
+                <td>21</td>
+                <td>22</td>
+                <td>23</td>
+                <td>24</td>
+                <td>25</td>
+                <td>26</td>
+                <td>27</td>
+                <td>28</td>
+                <td>29</td>
+                <td>30</td>
+              </tr>
+
+              <tr>
+                <td>China</td>
+                <td>34</td>
+                <td>35</td>
+                <td>36</td>
+                <td>37</td>
+                <td>38</td>
+                <td>39</td>
+                <td>40</td>
+                <td>41</td>
+                <td>42</td>
+                <td>43</td>
+              </tr>
+
+              <tr>
+                <td>South Korea</td>
+                <td>220</td>
+                <td>225</td>
+                <td>230</td>
+                <td>235</td>
+                <td>240</td>
+                <td>245</td>
+                <td>250</td>
+                <td>255</td>
+                <td>260</td>
+                <td>265</td>
+              </tr>
+
+              <tr>
+                <td>India</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+              </tr>
+            </table>
+          </div>
+
+        </div>
+      </div> 
+
+      <button class="button_cart">Add to Shopping Bag</button>
+      <button class="button_wishlist">Add to Wishlist <i class="fa-regular fa-heart"></i></button>
+
+      <p id="ship"><b>Free Shipping </b>on all orders for a limited time only.</p>
+
+      <button class="accordion" id="sty">style details</button>
+      <div class="panel">
+        <p>Balenciaga fuels the luxury athletic footwear trend with these iconic Phantom sneakers. This pair is made from mesh-paneled uppers and rests on futuristic, chunky waved soles.</p>
+        <li>upper: fabric</li>
+        <li>lining: fabric</li>
+        <li>sole: fabric insole, rubber sole</li>
+        <li>round toe</li>
+        <li>lace-up</li>
+        <li>Made in Italy</li>
+      </div>
+
+      <button class="accordion">size and fit</button>
+      <div class="panel">
+        <li>True to size</li>
+        <li>Slightly wide</li>
+        <li>Half sizes please take the next size up</li>
+        <li>European sizes</li>
+        <li>2,5cm-1" platform (size EU 38)</li>
+        <li>5cm-2" wedge heel (size EU 38)</li>
+        <p>If you have any questions, please call our customer care team at</p>
+        <p class="pp">+49 89 127695-101</p>
+        <p class="pp">Argentina: 0800-666-0663</p>
+        <p class="pp">Chile: 800-914-515</p>
+        <p class="pp">Colombia: 01800-518-5268</p>
+        <p class="pp">Mexico: 01-800-099-0703</p>
+      </div>
+
+      <button class="accordion">delivery and free returns</button>
+      <div class="panel">
+        <p>All orders are shipped worldwide via our affiliate courier DHL. Please see the shipping method as well as shipping costs and delivery times for your destination <u>here</u>.</p>
+        <p>We gladly accept returns within 30 days of receipt free of charge. Read <u>here</u>.</p>
+      </div>
+
+      <p class="ppp">More questions about this item?</p>
+      <p class="ppp">See more Balenciaga</p>
+      <p class="ppp">See more Shoes by Balenciaga</p>
+
+      <!-- icons -->
+      <div id="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-pinterest"></i>
+      </div>
+      
+    </div>
+  </div>
+</body>
+</html>
+
+<script src="./product_details.js"></script>
