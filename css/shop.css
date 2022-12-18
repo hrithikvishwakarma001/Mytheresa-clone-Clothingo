@@ -101,10 +101,6 @@ body{
     gap:10px;
 }
 
-.sidebar_cards .sidebar{
-  
-    /* border:1px solid red; */
-}
 .sidebar_cards .cards{
     width:1100px;
     height:auto;
