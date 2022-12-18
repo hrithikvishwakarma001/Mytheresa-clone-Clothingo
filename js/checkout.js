@@ -6,7 +6,7 @@ let address=document.getElementById("add").value;
 let pincide=document.getElementById("pincode").value;
 let city=document.getElementById("city").value;
 let number=document.getElementById("number").value
-proceedbtn.addEventListener("click",()=>{
+proceedbtn.addEventListener("submit",()=>{
     window.location.href="payment.html"
     let obj={
         firstname,

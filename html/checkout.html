@@ -10,10 +10,9 @@
     <title>Document</title>
   </head>
   <body>
-    <div id="logo">
-      <div>
-        <img src="" alt="" />
-      </div>
+    <div id="container">
+      <div id="logo">
+      <img src="http://127.0.0.1:5500/images/Clothingo2.0.png" alt="" style="padding-top: 60px;">
     </div>
     <div id="details">
       <h3>SHIPPING ADDRESS</h3>
@@ -46,8 +45,9 @@
         </select>
         <label for="">Phone Number</label>
         <input type="Number" id="number" placeholder="Enter Your Number">
+        <input type="submit" id="proceedbtn">
       </form>
-      <button id="proceedbtn" onclick="proceedbtnfunc()">PROCEED TO PAYMENT</button>
+      <!-- <button id="proceedbtn" onclick="proceedbtnfunc()">PROCEED TO PAYMENT</button> -->
     </div>
     <hr>
     
@@ -55,21 +55,21 @@
         <p>You can also place your order via telephone.</p>
         <div>
             <div>
-                <i class="fa-solid fa-phone fa-4x"></i>
+                <i class="fa-solid fa-phone fa-2x" ></i>
                 <p>CALL US</p>
-                <p>+49 89 127695-101</p>
-                <P>Argentina: 0800-666-0663</P>
-                <P>Chile: 800-914-515</P>
-                <p>Colombia: 01800-518-5268</p>
-                <p>Mexico: 01-800-099-0703</p>
-                <p>Peru: 0800-78259</p>
-                <p>Puerto Rico: 1-787-303-4205</p>
+                <p style="text-decoration: underline;">+49 89 127695-101</p>
+                <P>Argentina: <span style="text-decoration: underline;">0800-666-0663</span></P>
+                <P>Chile: <span style="text-decoration: underline;">800-914-515</span></P>
+                <p>Colombia: <span style="text-decoration: underline;">01800-518-5268</span></p>
+                <p>Mexico: <span style="text-decoration: underline;">01-800-099-0703</span></p>
+                <p>Peru: <span style="text-decoration: underline;">0800-78259</span></p>
+                <p>Puerto Rico: <span style="text-decoration: underline;">1-787-303-4205</span></p>
                 <p>Available 24/7</p>
             </div>
             <div>
-              <i class="fa-solid fa-envelope fa-4x"></i>
+              <i class="fa-solid fa-envelope fa-2x"></i>
               <p>MAIL US</p>
-              <p>customercare@mytheresa.com</p>
+              <p><span style="text-decoration: underline;">customercare@clothingo.com</span></p>
               <p>Please note that due to a high amount of requests, we might take a few days to get back to you. We apologize for any inconvenience this may cause.</p>
 
             </div>
@@ -81,7 +81,7 @@
         copyright © 2006-2022 clothingo.com
       </p>
       <p>terms of use privacy policy imprint</p>
-    </div>
+    </div></div>
     <script src="/js/checkout.js"></script>
   </body>
 </html>
