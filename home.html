@@ -51,7 +51,7 @@
 							<h3>WELCOME!</h3>
 							<div class="account-top">
 								<input
-								id="search"
+								id="email"
 								type="text"
 								name="q"
 								placeholder="Your E-Mail"
@@ -59,14 +59,14 @@
 								class="input-text ff-basic-autocomplete"
 								autocomplete="off" />	
 								<input
-									id="search"
+									id="pwd"
 									type="text"
 									name="q"
 									placeholder="Password"
 									value=""
 									class="input-text ff-basic-autocomplete"
 									autocomplete="off" />			
-								<button>LOGIN</button>				
+								<button onclick="loginpage()">LOGIN</button>				
 							</div>
 							<div class="account-top account-bottom">
 							   <span>If you have an account with us, log in <br>
@@ -78,7 +78,7 @@
 										  password.
 									</span>
 									<h3>Did you forget your password?</h3>		
-								<button>CREATE AN ACCOUNT</button>				
+								<button id="gotoregisterpage">CREATE AN ACCOUNT</button>				
 							</div>
 		
 						</div>
@@ -1049,3 +1049,4 @@
 </html>
 <script src="js/none.js"></script>
 <script src="js/main.js"></script>
+<script src="js/login.js"></script>
