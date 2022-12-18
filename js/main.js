@@ -116,3 +116,12 @@ poster.onmouseover = () => {
     poster.style.cursor = 'pointer';
 }
 
+
+
+// ---------------------------------------------------------------------------
+
+let wish = document.querySelector('.wish');
+
+wish.onclick=()=>{
+    window.location.href='/html/wishlist.html';
+}

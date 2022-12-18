@@ -2393,7 +2393,7 @@ let page_btns=document.querySelectorAll(".page")
 //LocalStorage
 function itemDetails(item){
   localStorage.setItem("card_details",JSON.stringify(item))
-  window.location.href="./product_details/product_details.html"
+  window.location.href="/html/product_details.html"
 }
 
 

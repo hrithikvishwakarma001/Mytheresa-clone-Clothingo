@@ -94,7 +94,7 @@ var splide = new Splide("#main-slider", {
 
   let getDetails = JSON.parse(localStorage.getItem("card_details"));
   console.log(getDetails);
-  var cartArr = JSON.parse(localStorage.getItem("cart")) || [];
+  var cartArr = JSON.parse(localStorage.getItem("cartitems")) || [];
   console.log(cartArr);
   var WishlistArr = JSON.parse(localStorage.getItem("wishlist")) || [];
   console.log(WishlistArr);
@@ -191,7 +191,7 @@ function addToCart(data) {
   cartArr.push(data);
   alert(`${data.product_name} has been added to cart`);
   // console.log(cartArr);
-  localStorage.setItem("cart",JSON.stringify(cartArr));
+  localStorage.setItem("cartitems",JSON.stringify(cartArr));
 }
 
 // add to Wishlist
@@ -207,3 +207,11 @@ function addToWishlist(data) {
 
 
 
+let button_cart = document.querySelector(".button_cart");
+button_cart.onclick=()=>{
+  window.location.href="cart.html";
+}
+// let wishList = document.querySelector(".button_wishlist");
+// wishList.onclick=()=>{
+//   window.location.href="wishlist.html";
+// }
