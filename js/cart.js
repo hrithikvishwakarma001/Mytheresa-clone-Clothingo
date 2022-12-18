@@ -217,3 +217,4 @@ buttons.forEach((x) => {
         }
     }
 })
+    location.href="checkout.html"
