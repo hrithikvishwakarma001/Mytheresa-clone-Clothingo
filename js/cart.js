@@ -2,7 +2,7 @@
 
 let cartitems=document.getElementById("cartitems_wrapper")
 let data=JSON.parse(localStorage.getItem("cartitems"));
-
+console.log(data)
 let finalsubtotal=document.getElementById("spansubtotal")
 let grandtotal=document.getElementById("spangrandtotal")
 
@@ -187,4 +187,7 @@ function shopping(){
 window.onload = () => {
     document.body.style.opacity = 1;
     document.body.style.visibility = 'visible';
+let checkoutbtn2 = document.getElementById("checkoutbtn2");
+checkoutbtn2.onclick=()=>{
+    location.href="payment.html"
 }

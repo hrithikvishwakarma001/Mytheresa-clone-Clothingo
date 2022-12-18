@@ -117,4 +117,5 @@ localStorage.setItem("cartitems",JSON.stringify(arr));
 window.onload = () => {
     document.body.style.opacity = 1;
     document.body.style.visibility = 'visible';
+
 }
