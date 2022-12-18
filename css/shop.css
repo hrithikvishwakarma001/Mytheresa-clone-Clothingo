@@ -108,6 +108,7 @@ body{
     margin-top: 50px;
 }
 
+
 .sidebar_cards .cards{
   
     border:1px solid red;
@@ -117,6 +118,7 @@ body{
 label{
     margin-left: 10px;
 }
+
 .sidebar_cards .cards{
     width:1100px;
     height:auto;
@@ -271,7 +273,8 @@ label{
     cursor: pointer;
 }
 
-/* .cards> div hr{
+
+.cards> div hr{
     width:80%;
     margin: 0;
     margin-top: 2px;
@@ -415,12 +418,14 @@ label{
 
 
 
+
 hr{
     width: 1180px;
     margin: auto;
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
 
 .my-cards{
     display: grid;
@@ -449,6 +454,7 @@ hr{
 .my-bottom{
     line-height: 25px;
 }
+
 
 .my-below-landing-poster{
     width:1180px;
@@ -480,4 +486,23 @@ hr{
 }
 .icon:hover{
     cursor: pointer;
+
+    .landing-poster{
+    display: block;
+    unicode-bidi: isolate;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    overflow: hidden;
+    border-style: inset;
+    }
+} */
+
+hr{
+    width: 1180px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
 }
