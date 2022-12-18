@@ -10,6 +10,7 @@ body{
     justify-content: space-evenly;
     border-bottom: 1px solid rgb(137, 134, 134);
     padding-bottom: 50px;
+    /* border: 1px solid red; */
     margin-top: 50px;
   }
   @media all and (min-width:1px) and (max-width:800px){
@@ -26,16 +27,18 @@ body{
   }
   .childcontainer{
     width:50%;
+    padding-left: 70px;
   }
   .childcontainer1{
     border-right: 1px solid rgb(137, 134, 134);
-    
     width:50%;
+
   }
 .secchildcontainer{
   width: 80%;
   height: 100%;
-  margin: auto;
+  /* margin-left: 45px; */
+  /* margin: auto; */
 }
 
 /* P{
@@ -48,23 +51,36 @@ body{
   font-weight: normal;
   letter-spacing: 1.5px;
   margin-bottom: 10px;
+  margin-left: 4px;
 }
 .para{
   color: rgb(137, 134, 134);
   font-family:Helvetica;
   margin-top: 10px;
   margin-bottom: 10px;
+  margin-left: 4px;
 }
 .inputform{
-  width:80%;
+  width:100%;
   padding: 13px  15px;
   letter-spacing: .8px;
   font-size: 14px;
   margin: 5px;
   border: 1px solid rgb(195, 192, 192);
+
+}
+.inputformreg{
+  width:100%;
+  padding: 13px  15px;
+  padding-right: 50px;
+  letter-spacing: .8px;
+  font-size: 14px;
+  margin: 5px;
+  border: 1px solid rgb(195, 192, 192);
+ 
 }
 .inputform2{
-  width:80%;
+  width:100%;
   padding: 13px  15px;
   letter-spacing: .8px;
   font-size: 14px;
@@ -82,7 +98,9 @@ body{
   margin-bottom: 20px;
   margin-left: 5px;
 }
-
+.checkbox{
+  margin-left: 5px;
+}
 #loginbtn{
   color: white;
   background-color: black;
@@ -130,4 +148,9 @@ body{
 .checkbox{
   margin-top: 10px;
   margin-bottom: 10px;
+}
+body{
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
 }

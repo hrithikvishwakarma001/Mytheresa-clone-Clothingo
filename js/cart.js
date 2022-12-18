@@ -184,13 +184,9 @@ function proceed(){
 function shopping(){
     alert('go to shopping page')
 }
-
-window.onload=()=>{
-    document.body.style.opacity=1;
-    document.body.style.visibility="visible";
-    
-}
-
+window.onload = () => {
+    document.body.style.opacity = 1;
+    document.body.style.visibility = 'visible';
 let checkoutbtn2 = document.getElementById("checkoutbtn2");
 checkoutbtn2.onclick=()=>{
     location.href="payment.html"
