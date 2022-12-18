@@ -2326,64 +2326,49 @@ setInterval(() => {
 
 //cards section*******************************************
 
-let cards = document.querySelector(".cards");
+let cards = document.querySelector(".my-cards");
 function displayData(data) {
      cards.innerHTML="";
-    
-     data.forEach((item)=>{
-      let div1=document.createElement("div");
-      let div2=document.createElement("div");
-      div2.setAttribute("class","top")
-      let hr1=document.createElement("hr");
-      let hr2=document.createElement("hr");
-      let arrival=document.createElement("span");
-      arrival.innerText=item.product_button;
-       
-      let div3=document.createElement("div");
-      div3.setAttribute("class","bottom")
-      let image=document.createElement("img");
-      image.src=item.image;
-      image.addEventListener("click",()=>{
-      itemDetails(item);
-         
-      })
-
-      let brand=document.createElement("span")
-      brand.innerText="GIVENCHY";
-      let title=document.createElement("p")
-      title.innerText=item.product_name;
-      let price=document.createElement("h5");
-      price.innerText="€ "+item.price;
-      let heart=document.createElement("p");
-      heart.setAttribute("class","fav-symbol")
-      heart.innerHTML="&#9829;"
-     
         
-      let div=document.createElement("div");
-      div.setAttribute("class","arrival")
-       div.append(hr1,arrival,hr2,heart)
-       div2.append(div,heart);
-       div3.append(image,brand,title,price);
-       div1.append(div2,div3)
-       cards.append(div1);
-     })
+ 
      
-
-  // let mapped_data = data.map((item) => {
-  //   return ` 
-  //           <div class="hello">
-  //            <hr>
-  //           <div>
-  //            <span>${item.product_button}<span>
-  //           </div>
-  //           <hr>
-  //           <div>
-  //           <img src="${item.image}"
-  //           </div>
-  //           </div> 
-  //  `
-  // })
-  // cards.innerHTML=mapped_data.join(" ")
+     data.forEach((item)=>{
+          
+        let myparentDiv=document.createElement("div");
+        myparentDiv.setAttribute("class","my-parent-div");
+        
+        let myArrivalDiv=document.createElement("div");
+        myArrivalDiv.setAttribute("class","my-arrival");
+        let imgArrival=document.createElement("img");
+        imgArrival.src="/images/arrival2.0.png"
+        let myHeart=document.createElement("p");
+        myHeart.innerHTML="&#9829;";
+  
+        myArrivalDiv.append(imgArrival,myHeart);
+  
+        let my_image=document.createElement("img");
+        my_image.setAttribute("class","my-card-image")
+        my_image.src=item.image
+        my_image.addEventListener("click",()=>{
+          itemDetails(item)
+        })
+         
+        let bottom=document.createElement("div");
+        bottom.setAttribute("class","my-bottom")
+        let brand=document.createElement("span")
+        brand.innerText="GIVENCHY";
+        let title=document.createElement("p")
+        title.innerText=item.product_name;
+        let price=document.createElement("h5");
+        price.innerText="€ "+item.price;
+        
+        bottom.append(brand,title,price)
+        
+        myparentDiv.append(myArrivalDiv,my_image,bottom)
+        
+        cards.append(myparentDiv)
+            
+       })
 
 }
 displayData(details)
@@ -2398,21 +2383,26 @@ function itemDetails(item){
 
 
 
+
+let page_btn=document.querySelectorAll(".mypage");
+page_btn[0].style.color="blue"
+
 let page_btn=document.querySelectorAll(".page1");
+
 for(let i=0;i<page_btn.length;i++){
   page_btn[i].addEventListener("click",function(event){
     if(event.target.innerText=="1"){
       page_btn[i].style.color="blue"
       page_btn[1].style.color="black"
       page_btn[2].style.color="black"
-      displayData(details)
+     displayData(details)
       
     }
     if(event.target.innerText=="2"){ 
       page_btn[i].style.color="blue"
       page_btn[0].style.color="black"
       page_btn[2].style.color="black"
-           pageTwo(details_two);
+         pageTwo(details_two);
            
     }
     
@@ -2431,40 +2421,42 @@ for(let i=0;i<page_btn.length;i++){
 function pageTwo(data) {
   cards.innerHTML="";
   data.forEach((item)=>{
-   let div1=document.createElement("div");
-   let div2=document.createElement("div");
-    div2.setAttribute("class","top")
-   let hr1=document.createElement("hr");
-   let hr2=document.createElement("hr");
-   let arrival=document.createElement("span");
-   arrival.innerText=item.product_button;
+          
+    let myparentDiv=document.createElement("div");
+    myparentDiv.setAttribute("class","my-parent-div");
     
-   let div3=document.createElement("div");
-   div3.setAttribute("class","bottom")
-   let image=document.createElement("img");
-   image.src=item.image;
-   image.addEventListener("click",()=>{
-     itemDetails(item);
-   })
+    let myArrivalDiv=document.createElement("div");
+    myArrivalDiv.setAttribute("class","my-arrival");
+    let imgArrival=document.createElement("img");
+    imgArrival.src="/images/arrival2.0.png"
+    let myHeart=document.createElement("p");
+    myHeart.innerHTML="&#9829;";
 
-   let brand=document.createElement("span")
-   brand.innerText="GIVENCHY";
-   let title=document.createElement("p")
-   title.innerText=item.product_name;
-   let price=document.createElement("h5");
-   price.innerText=item.price;
-   let heart=document.createElement("p");
-   heart.setAttribute("class","fav-symbol")
-   heart.innerHTML="&#9829;"
-  
-   let div=document.createElement("div");
-   div.setAttribute("class","arrival")
-    div.append(hr1,arrival,hr2,heart)
-    div2.append(div,heart);
-    div3.append(image,brand,title,price);
-    div1.append(div2,div3)
-    cards.append(div1);
-  })
+    myArrivalDiv.append(imgArrival,myHeart);
+
+    let my_image=document.createElement("img");
+    my_image.setAttribute("class","my-card-image")
+    my_image.src=item.image
+    my_image.addEventListener("click",()=>{
+      itemDetails(item)
+    })
+     
+    let bottom=document.createElement("div");
+    bottom.setAttribute("class","my-bottom")
+    let brand=document.createElement("span")
+    brand.innerText="GIVENCHY";
+    let title=document.createElement("p")
+    title.innerText=item.product_name;
+    let price=document.createElement("h5");
+    price.innerText="€ "+item.price;
+    
+    bottom.append(brand,title,price)
+    
+    myparentDiv.append(myArrivalDiv,my_image,bottom)
+    
+    cards.append(myparentDiv)
+        
+   })
  
 }
 
@@ -2472,41 +2464,44 @@ function pageTwo(data) {
 
 function pageThree(data) {
   cards.innerHTML="";
+  
   data.forEach((item)=>{
-   let div1=document.createElement("div");
-   let div2=document.createElement("div");
-    div2.setAttribute("class","top")
-   let hr1=document.createElement("hr");
-   let hr2=document.createElement("hr");
-   let arrival=document.createElement("span");
-   arrival.innerText=item.product_button;
+          
+    let myparentDiv=document.createElement("div");
+    myparentDiv.setAttribute("class","my-parent-div");
     
-   let div3=document.createElement("div");
-   div3.setAttribute("class","bottom")
-   let image=document.createElement("img");
-   image.src=item.image;
-   image.addEventListener("click",()=>{
-     itemDetails(item);
-   })
+    let myArrivalDiv=document.createElement("div");
+    myArrivalDiv.setAttribute("class","my-arrival");
+    let imgArrival=document.createElement("img");
+    imgArrival.src="/images/arrival2.0.png"
+    let myHeart=document.createElement("p");
+    myHeart.innerHTML="&#9829;";
 
-   let brand=document.createElement("span")
-   brand.innerText="GIVENCHY";
-   let title=document.createElement("p")
-   title.innerText=item.product_name;
-   let price=document.createElement("h5");
-   price.innerText=item.price;
-   let heart=document.createElement("p");
-   heart.setAttribute("class","fav-symbol")
-   heart.innerHTML="&#9829;"
- 
-   let div=document.createElement("div");
-   div.setAttribute("class","arrival")
-    div.append(hr1,arrival,hr2,heart)
-    div2.append(div,heart);
-    div3.append(image,brand,title,price);
-    div1.append(div2,div3)
-    cards.append(div1);
-  })
+    myArrivalDiv.append(imgArrival,myHeart);
+
+    let my_image=document.createElement("img");
+    my_image.setAttribute("class","my-card-image")
+    my_image.src=item.image
+    my_image.addEventListener("click",()=>{
+      itemDetails(item)
+    })
+     
+    let bottom=document.createElement("div");
+    bottom.setAttribute("class","my-bottom")
+    let brand=document.createElement("span")
+    brand.innerText="GIVENCHY";
+    let title=document.createElement("p")
+    title.innerText=item.product_name;
+    let price=document.createElement("h5");
+    price.innerText="€ "+item.price;
+    
+    bottom.append(brand,title,price)
+    
+    myparentDiv.append(myArrivalDiv,my_image,bottom)
+    
+    cards.append(myparentDiv)
+        
+   })
 
 }
 
@@ -2572,6 +2567,7 @@ window.onload = () => {
 
 
 // saleTime
+
 
 let saleInterval = document.querySelector('.saleTime p');
 let a = 'Enjoy free shipping for a short time only';
@@ -2661,6 +2657,105 @@ buttons.forEach((x) => {
     }
 })
 
+
+let saleInterval = document.querySelector('.saleTime p');
+let a = 'Enjoy free shipping for a short time only';
+let b = 'Last day: Extra 10% off selected sale';
+setInterval(()=>{
+    if (saleInterval.innerHTML == a) {
+        saleInterval.innerHTML = b;
+    } else {
+        saleInterval.innerHTML = a;
+    }
+}, 5000);
+
+
+let btn = document.querySelector('.button-wrapper');
+
+
+btn.onclick = () => {
+    window.location.href='/html/shop.html';
+}
+
+// smooth loading of the page when reloading the page or going to another page from the same website  
+
+
+let stickyNav = document.querySelector('.stick');
+let shoppingBagIcon = document.querySelector('#shoppingBagIcon');
+let saleTime = document.querySelector('.saleTime');
+let label = document.querySelector('.label');
+
+let stickyNavTop = stickyNav.offsetTop;
+function stickyNavFunc() {
+    if (window.pageYOffset >= stickyNavTop) {
+        label.style.display = 'none';
+        stickyNav.classList.add('sticky');
+        saleTime.classList.add('sticky3');
+        shoppingBagIcon.classList.add('sticky2');
+
+    } else {
+        label.style.display = 'inline-block';
+        shoppingBagIcon.classList.remove('sticky2');
+        stickyNav.classList.remove('sticky');
+        saleTime.classList.remove('sticky3');
+    }
+}
+window.addEventListener('scroll', stickyNavFunc);
+
+let heart2 = document.querySelector('.heart2');
+let wish2 = document.querySelector('.wish-2');
+
+wish2.onmouseover = () => {
+    heart2.style.color = 'rgba(0, 0, 0, 0.6)';
+}
+wish2.onmouseout = () => {
+    heart2.style.color = '#e7e7e7';
+}
+
+// --------------------------------------------------
+
+let scrolltop = document.querySelector('#scrolltop');
+scrolltop.style.opacity = 0;
+
+scrolltop.onclick = () => {
+    window.scrollTo(0, 0);
+}
+window.onscroll = () => {
+    if (window.scrollY>500) {
+        scrolltop.style.opacity = 1;
+    } else {
+        scrolltop.style.opacity = 0;
+    }
+}
+
+// ----------------LINK----BUTTONS------------------------------------
+
+let buttons = document.querySelectorAll('#left div');
+// console.log(buttons)
+
+// background-color: #f2f2f2;
+
+buttons.forEach((x) => {
+    x.onclick = () => {
+        buttons.forEach((item) => {
+            item.style.backgroundColor = 'white';
+        })
+        x.style.backgroundColor = '#f2f2f2';
+        if(x.innerHTML==='MEN'){
+            window.location.href='/html/men.html';
+        }
+        else if(x.innerHTML==='WOMEN'){
+            window.location.href='/home.html';
+        }
+        else if(x.innerHTML==='KIDS'){
+            window.location.href='/html/kids.html';
+        }
+        else if(x.innerHTML==='LIFE'){
+            window.location.href='/html/life.html';
+        }
+    }
+})
+
 let btn = document.querySelector('.button-wrapper');
 
 btn.onclick = () => {
@@ -2668,6 +2763,7 @@ btn.onclick = () => {
 }
 
 // smooth loading of the page when reloading the page or going to another page from the same website  
+
 
 window.onload = () => {
     document.body.style.opacity = 1;

@@ -118,6 +118,9 @@ window.onload = () => {
     document.body.style.opacity = 1;
     document.body.style.visibility = 'visible';
 
+
+}
+
 }
 let buttons = document.querySelectorAll('#left div');
 console.log(buttons)
@@ -144,3 +147,4 @@ buttons.forEach((x) => {
         }
     }
 })
+

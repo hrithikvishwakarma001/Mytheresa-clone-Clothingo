@@ -187,6 +187,12 @@ function shopping(){
 window.onload = () => {
     document.body.style.opacity = 1;
     document.body.style.visibility = 'visible';
+
+let checkoutbtn2 = document.getElementById("checkoutbtn2");
+checkoutbtn2.onclick=()=>{
+    location.href="checkout.html"
+}
+
 }
 let checkoutbtn2 = document.getElementById("checkoutbtn2");
 checkoutbtn2.onclick=()=>{
@@ -218,3 +224,4 @@ buttons.forEach((x) => {
     }
 })
     location.href="checkout.html"
+
