@@ -62,6 +62,7 @@ signin_form.addEventListener("submit",function(event){
             login_failed_div.innerHTML=null;
             signin_form.reset();
             signin_email.focus();
+            window.location.href="/home.html"
         }
 })
 
@@ -75,23 +76,23 @@ console.log(buttons)
 
 // background-color: #f2f2f2;
 
-buttons.forEach((x) => {
-    x.onclick = () => {
-        buttons.forEach((item) => {
-            item.style.backgroundColor = 'white';
-        })
-        x.style.backgroundColor = '#f2f2f2';
-        if(x.innerHTML==='MEN'){
-            window.location.href='/html/men.html';
-        }
-        else if(x.innerHTML==='WOMEN'){
-            window.location.href='/home.html';
-        }
-        else if(x.innerHTML==='KIDS'){
-            window.location.href='/html/kids.html';
-        }
-        else if(x.innerHTML==='LIFE'){
-            window.location.href='/html/life.html';
-        }
-    }
-})
+// buttons.forEach((x) => {
+//     x.onclick = () => {
+//         buttons.forEach((item) => {
+//             item.style.backgroundColor = 'white';
+//         })
+//         x.style.backgroundColor = '#f2f2f2';
+//         if(x.innerHTML==='MEN'){
+//             window.location.href='/html/men.html';
+//         }
+//         else if(x.innerHTML==='WOMEN'){
+//             window.location.href='/home.html';
+//         }
+//         else if(x.innerHTML==='KIDS'){
+//             window.location.href='/html/kids.html';
+//         }
+//         else if(x.innerHTML==='LIFE'){
+//             window.location.href='/html/life.html';
+//         }
+//     }
+// })
