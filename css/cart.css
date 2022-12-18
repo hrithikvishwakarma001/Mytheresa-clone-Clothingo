@@ -130,7 +130,7 @@ body{
 }
 #promobtn{
     width: 210px;
-    padding: 12px;
+    padding: 11.5px;
     border: none;
 }
 #promobtn:hover{
@@ -185,3 +185,64 @@ body{
     visibility: hidden;
     transition: all 0.3s ease-in-out;
   }
+
+  #cartfooter{
+    width: 1180px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    margin-top:30px;
+   
+  }
+
+  #cartfooter>div{
+    width: 47%;
+    border: 1px solid rgb(124, 121, 121);
+    padding-top: 20px;
+  }
+  #cartfooter>div>div{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 30px;
+  }
+  #cfh3{
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  letter-spacing: 0.8px; 
+  }
+  #spanfooter{
+   margin-top: 10px;
+  }
+  .marginfooter{
+    margin-top: 10px;
+  }
+  .footercart{
+    color:rgb(124, 121, 121)
+  }
+
+  #footerpara{
+    width: 1180px;
+    margin: auto;
+    text-align: center;
+    color:rgb(124, 121, 121);
+    margin-top: 20px;
+  }
+  #finalfootercart{
+    width: 1180px;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px solid rgb(124, 121, 121);
+    color:rgb(124, 121, 121);
+  }
+  #callusdiv{
+    /* border: 1px solid red; */
+    margin-top: -30px;
+  }
+
+  
+  

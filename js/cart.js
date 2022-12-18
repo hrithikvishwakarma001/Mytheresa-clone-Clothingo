@@ -2,7 +2,7 @@
 
 let cartitems=document.getElementById("cartitems_wrapper")
 let data=JSON.parse(localStorage.getItem("cartitems"));
-console.log(data)
+
 let finalsubtotal=document.getElementById("spansubtotal")
 let grandtotal=document.getElementById("spangrandtotal")
 
@@ -14,9 +14,13 @@ let total=0;
 
 function rendercartitems(data){
 
+    let cartquantity=data.reduce((a,b) => {
+        return a+b.quant;
+      },0);
     
+    localStorage.setItem("cartquantity",cartquantity);
     total=data.reduce((accu,item)=>{
-        accu=accu+Number(item.price)*item.quantity;
+        accu=accu+Number(item.price)*item.quant;
         return +accu.toFixed(2);
     },0)
     finalsubtotal.innerText=total;
@@ -57,7 +61,7 @@ function rendercartitems(data){
 
         let img=document.createElement("img");
         img.setAttribute("id","cart_img");
-        img.setAttribute("src",elem.img);
+        img.setAttribute("src",elem.image);
         img.style.width="130px";
         img.setAttribute("id","cart_img");
 
@@ -69,19 +73,19 @@ function rendercartitems(data){
         let one=document.createElement("div");
         let onep=document.createElement("p");
         onep.setAttribute("class","font_unique");
-        onep.innerText=elem.title;
+        onep.innerText=elem.product_name;
         one.append(onep);
 
-        let two=document.createElement("div");
-        let twop=document.createElement("p");
-        two.setAttribute("id","desc");
-        twop.innerText=elem.des;
-        two.append(twop);
+        // let two=document.createElement("div");
+        // let twop=document.createElement("p");
+        // two.setAttribute("id","desc");
+        // twop.innerText=elem.des;
+        // two.append(twop);
 
 
         let three=document.createElement("div");
         let threep=document.createElement("span");
-        threep.innerText=elem.size;
+        threep.innerText=elem.available_size2;
         three.setAttribute("id","size");
         three.innerHTML="Size: "
         three.append(threep);
@@ -93,7 +97,7 @@ function rendercartitems(data){
         four.innerText="Item_no: "
 
         four.setAttribute("id","item_no");
-        fourp.innerText=elem.Item_no;
+        fourp.innerText=`${Math.floor(Math.random()*100)}`;
         four.append(fourp);
 
         let firstbtn=document.createElement("button");
@@ -109,7 +113,7 @@ function rendercartitems(data){
 
 
 
-        divsecond.append(one,two,three,four,firstbtn);
+        divsecond.append(one,three,four,firstbtn);
 
         firstchild.append(divfirst,divsecond);
 
@@ -129,7 +133,7 @@ function rendercartitems(data){
         secsec.setAttribute("class","price");
         secsec.innerText="₹";
         let secsecspan=document.createElement("span");
-        let subtotal=elem.price*elem.quantity;
+        let subtotal=elem.price*elem.quant;
         secsecspan.innerText=subtotal;
         secsec.append(secsecspan);
 
@@ -139,13 +143,13 @@ function rendercartitems(data){
         ibt1.innerText="+"
 
         ibt1.addEventListener("click",function(){
-            data[i].quantity++;
+            data[i].quant++;
             localStorage.setItem("cartitems",JSON.stringify(data));
             rendercartitems(data);
         })
 
         let quantityspan=document.createElement("span");
-        quantityspan.innerText=elem.quantity;
+        quantityspan.innerText=elem.quant;
         quantityspan.setAttribute("id","qs")
         let dbt2=document.createElement("button");
         dbt2.setAttribute("class","asbtn")
@@ -155,7 +159,7 @@ function rendercartitems(data){
             if(elem.quantity<=1){
                 return;
             }
-            data[i].quantity--;
+            data[i].quant--;
             localStorage.setItem("cartitems",JSON.stringify(data));
             rendercartitems(data);
         })
@@ -178,16 +182,49 @@ function deletecartitem(data,i){
 }
 
 function proceed(){
-    alert("go to payment page")
+    window.location.href="checkout.html"
 }
 
 function shopping(){
-    alert('go to shopping page')
+    window.location.href="shop.html"
 }
 window.onload = () => {
     document.body.style.opacity = 1;
     document.body.style.visibility = 'visible';
+
 let checkoutbtn2 = document.getElementById("checkoutbtn2");
 checkoutbtn2.onclick=()=>{
     location.href="checkout.html"
 }
+
+}
+let checkoutbtn2 = document.getElementById("checkoutbtn2");
+checkoutbtn2.onclick=()=>{
+    location.href="checkout.html"
+}
+let buttons = document.querySelectorAll('#left div');
+console.log(buttons)
+
+// background-color: #f2f2f2;
+
+buttons.forEach((x) => {
+    x.onclick = () => {
+        buttons.forEach((item) => {
+            item.style.backgroundColor = 'white';
+        })
+        x.style.backgroundColor = '#f2f2f2';
+        if(x.innerHTML==='MEN'){
+            window.location.href='/html/men.html';
+        }
+        else if(x.innerHTML==='WOMEN'){
+            window.location.href='/home.html';
+        }
+        else if(x.innerHTML==='KIDS'){
+            window.location.href='/html/kids.html';
+        }
+        else if(x.innerHTML==='LIFE'){
+            window.location.href='/html/life.html';
+        }
+    }
+})
+

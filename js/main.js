@@ -1,6 +1,16 @@
 // saleTime
 
+let cart_quantity=localStorage.getItem("cartquantity");
+console.log(cart_quantity)
+
+let count=document.querySelector("#shoppingBagIcon > span.count.icon.icon-cart");
+count.innerText=cart_quantity;
+
+count.onclick=()=>{
+    window.location.href="/html/cart.html"
+}
 let saleInterval = document.querySelector('.saleTime p');
+console.log(saleInterval)
 let a = 'Enjoy free shipping for a short time only';
 let b = 'Last day: Extra 10% off selected sale';
 setInterval(()=>{
@@ -62,14 +72,14 @@ window.onscroll = () => {
 
 // ----------------LINK----BUTTONS------------------------------------
 
-let buttons = document.querySelectorAll('#left div');
+let butto= document.querySelectorAll('#left div');
 // console.log(buttons)
 
 // background-color: #f2f2f2;
 
-buttons.forEach((x) => {
+butto.forEach((x) => {
     x.onclick = () => {
-        buttons.forEach((item) => {
+        butto.forEach((item) => {
             item.style.backgroundColor = 'white';
         })
         x.style.backgroundColor = '#f2f2f2';
