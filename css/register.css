@@ -1,0 +1,132 @@
+
+body{
+  background-color: #fff;
+}
+  .maincontainer{
+    height: auto;
+    width: 1180px;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 1px solid rgb(137, 134, 134);
+    padding-bottom: 50px;
+  }
+  @media all and (min-width:1px) and (max-width:800px){
+    .maincontainer{
+      display: block;
+      height: auto;
+      width: 1180px;
+      margin: auto;
+    }
+    .childcontainer1{
+      border-right: 1px solid #fff;
+      width:50%;
+    }
+  }
+  .childcontainer{
+    width:50%;
+  }
+  .childcontainer1{
+    border-right: 1px solid rgb(137, 134, 134);
+    
+    width:50%;
+  }
+.secchildcontainer{
+  width: 80%;
+  height: 100%;
+  margin: auto;
+}
+
+/* P{
+  font-family:Copperplate Gothic
+} */
+
+.registertitle{
+  font-family: Arial,Helvetica,sans-serif;
+  color: rgb(68, 65, 65);
+  font-weight: normal;
+  letter-spacing: 1.5px;
+  margin-bottom: 10px;
+}
+.para{
+  color: rgb(137, 134, 134);
+  font-family:Helvetica;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.inputform{
+  width:80%;
+  padding: 13px  15px;
+  letter-spacing: .8px;
+  font-size: 14px;
+  margin: 5px;
+  border: 1px solid rgb(195, 192, 192);
+}
+.inputform2{
+  width:80%;
+  padding: 13px  15px;
+  letter-spacing: .8px;
+  font-size: 14px;
+  margin: 5px;
+  margin-top: 10px;
+  border-color: rgb(195, 192, 192);
+}
+
+#register{
+  padding: 8px 18px;
+  font-size:small;
+  border: none;
+  color:rgb(81, 79, 79) ;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 5px;
+}
+
+#loginbtn{
+  color: white;
+  background-color: black;
+  margin-top: 15px;
+  padding: 7px 25px;
+  margin-left: 5px;
+}
+#loginbtn:hover{
+  cursor: pointer;
+  background-color: rgb(81, 79, 79);
+}
+#register:hover{
+  cursor: pointer;
+  background-color: rgb(190, 187, 187);
+}
+.marginclass{
+  margin-left: 5px;
+  letter-spacing: .8px;
+}
+#login_failed{
+  width: 1180px;
+  height: 40px;
+  margin: auto;
+  border: 1px solid red;
+  margin-bottom: 5px;
+}
+#failed{
+  color: red;
+  margin: 10px;
+}
+#header{
+  height: 250px;
+  border: 1px solid rgb(81, 79, 79);
+  margin-bottom: 50px;
+}
+#h1{
+  text-align: center;
+  margin: 100px;
+}
+#footer{
+  height: 250px;
+  border: 1px solid rgb(81, 79, 79);
+  margin-top: 50px;
+}
+.checkbox{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
