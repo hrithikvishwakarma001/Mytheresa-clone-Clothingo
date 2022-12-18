@@ -62,19 +62,15 @@ signin_form.addEventListener("submit",function(event){
             login_failed_div.innerHTML=null;
             signin_form.reset();
             signin_email.focus();
+            window.location.href="/home.html"
         }
 })
 
 window.onload = () => {
     document.body.style.opacity = 1;
     document.body.style.visibility = 'visible';
-
-
-}
-
 }
 let buttons = document.querySelectorAll('#left div');
-console.log(buttons)
 
 // background-color: #f2f2f2;
 
@@ -98,4 +94,3 @@ buttons.forEach((x) => {
         }
     }
 })
-

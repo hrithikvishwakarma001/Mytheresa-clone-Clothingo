@@ -10,14 +10,14 @@ let inputpromo=document.getElementById("inputpromo")
 let promobtn=document.getElementById("promobtn")
 
 let total=0;
-
+let counter=document.querySelector("#shoppingBagIcon > span.count.icon.icon-cart");
 
 function rendercartitems(data){
-
+    
     let cartquantity=data.reduce((a,b) => {
         return a+b.quant;
       },0);
-    
+      counter.innerText=cartquantity;
     localStorage.setItem("cartquantity",cartquantity);
     total=data.reduce((accu,item)=>{
         accu=accu+Number(item.price)*item.quant;
@@ -156,7 +156,7 @@ function rendercartitems(data){
         dbt2.innerText="-";
 
         dbt2.addEventListener("click",function(){
-            if(elem.quantity<=1){
+            if(elem.quant<=1){
                 return;
             }
             data[i].quant--;
@@ -227,4 +227,3 @@ buttons.forEach((x) => {
         }
     }
 })
-
