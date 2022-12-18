@@ -1,7 +1,10 @@
+
 body{
-    width: 80%;
-    margin: auto;
-}
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+  }
+  
 #form {
     display: flex;
     flex-direction: column;

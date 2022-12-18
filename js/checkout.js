@@ -7,7 +7,7 @@ let pincide=document.getElementById("pincode").value;
 let city=document.getElementById("city").value;
 let number=document.getElementById("number").value
 proceedbtn.addEventListener("click",()=>{
-    window.location.href=""
+    window.location.href="payment.html"
     let obj={
         firstname,
         lastname,
@@ -19,3 +19,8 @@ proceedbtn.addEventListener("click",()=>{
     lsdata.push(obj)
     localStorage.setItem("delivryadd",JSON.stringify(lsdata))
 })
+
+window.onload = () => {
+    document.body.style.opacity = 1;
+    document.body.style.visibility = 'visible';
+}
