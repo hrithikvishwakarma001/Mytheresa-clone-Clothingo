@@ -1,7 +1,7 @@
 let hiddenDiv = document.querySelectorAll('.popup');
 let title = document.querySelectorAll('#title ul li');
 
-console.log(hiddenDiv[0])
+// console.log(hiddenDiv[0])
 // console.log(title[0])
 for (let i = 0; i < hiddenDiv.length; i++) {
     hiddenDiv[i].onmouseover = () => {
@@ -72,28 +72,28 @@ closeBtn.onmouseover = () => {
 
 
 let contact = document.querySelector('#contact');
-let details = document.querySelector('.details');
+let detail = document.querySelector('.details');
 contact.onmouseover = () => {
-    details.style.opacity = 1;
-    details.style.visibility = 'visible';
+    detail.style.opacity = 1;
+    detail.style.visibility = 'visible';
 }
 contact.onmouseout = () => {
-    details.style.opacity = 0;
-    details.style.visibility = 'hidden';
+    detail.style.opacity = 0;
+    detail.style.visibility = 'hidden';
 }
-details.onmouseover = () => {
-    details.style.opacity = 1;
-    details.style.visibility = 'visible';
+detail.onmouseover = () => {
+    detail.style.opacity = 1;
+    detail.style.visibility = 'visible';
 }
-details.onmouseout = () => {
-    details.style.opacity = 0;
-    details.style.visibility = 'hidden';
+detail.onmouseout = () => {
+    detail.style.opacity = 0;
+    detail.style.visibility = 'hidden';
 }
 
 let closeContact = document.querySelector('.close-contact');
 closeContact.onclick = () => {
-    details.style.opacity = 0;
-    details.style.visibility = 'hidden';
+    detail.style.opacity = 0;
+    detail.style.visibility = 'hidden';
 }
 
 

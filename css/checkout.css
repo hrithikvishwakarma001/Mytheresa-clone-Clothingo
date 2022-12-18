@@ -1,0 +1,77 @@
+
+body{
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+  }
+  
+#form {
+    display: flex;
+    flex-direction: column;
+}
+#details{
+    width: 40%;
+    margin: auto;
+    padding: 5rem 0 .5rem 0;
+}
+#details input,select,button {
+    padding: .35rem;
+}
+#details  {
+    margin-bottom: 4rem;
+
+}
+#proceedbtn {
+    display: block;
+    margin: auto;
+    text-decoration: none;
+    margin-top: 2rem;
+    background-color: black;
+    color: white;
+    padding: .35rem .5rem .35rem .5rem ;
+  
+}
+#proceedbtn:hover{
+    background-color: white;
+    color: black;
+
+}
+#bot{
+    margin: auto;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+#bot>div{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 4rem;    
+}
+#bot>p{
+    margin: 3rem 0 3rem 0;
+    font-size:x-large;
+    font-weight:lighter;
+}
+#bot>div>div i{
+    font-size: medium;
+}
+#bot>div>div{
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+#bot>div>div:nth-child(1){
+    
+    line-height: .3rem;
+    padding:1.2rem 0 1.2rem 0;
+}
+#bot>div>div:nth-child(2){
+    
+    padding:1.2rem 1.5rem 1.2rem 1.5rem;
+}
+#copyright {
+    text-align: center;
+    
+}
+#copyright p{
+    letter-spacing: 1px;
+}

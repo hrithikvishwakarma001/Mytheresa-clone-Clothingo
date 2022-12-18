@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/payment.css"/>
+    <script src="https://kit.fontawesome.com/035c340386.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" 
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+          <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <div id="maindiv">
+        <p id="h2tag">PAYMENT METHOD</p>
+        <P id="payment_ptag">Please select your preferred payment method for this order.</P>
+        <hr/>
+
+        <!-- card details -->
+
+        <div id="card_details">
+            
+            <div id="card">
+                <div class="card">
+                    <input id="radio" type="radio" />
+                    <p id="p_card"><i id="cardicon" class="fa-solid fa-credit-card"></i> Card</p>
+                </div>
+                <p id="shipp">Immediate Shipping</p>
+            </div>
+
+            <div id="details">
+                <form>
+                    <!-- icons -->
+                <div class="icons">
+                    <i class="fa-brands fa-cc-visa"></i>
+                    <i class="fa-brands fa-cc-mastercard"></i>
+                    <i class="fa-brands fa-cc-amex"></i>
+                    <i class="fa-brands fa-cc-jcb"></i>
+                    <i class="fa-brands fa-cc-discover"></i>
+                    <i class="fa-brands fa-cc-amazon-pay"></i>
+                </div>
+
+                <!-- card holder -->
+                <p class="ptag" ><i class="fa-solid fa-user"></i> Name of Card  *</p>
+                <div class="inputdiv">
+                    <!-- <i class="fa-solid fa-user"></i> -->
+                    <input class="input_tag" type="text" placeholder="Enter card holdername" required/>
+                </div>
+
+                <!-- card number -->
+                <p class="ptag" ><i class="fa-solid fa-credit-card"></i> Credit Card Number  *</p>
+                <div class="inputdiv">
+                    <!-- <i class="fa-solid fa-credit-card"></i> -->
+                    <input class="input_tag" type="number" placeholder="1111 2222 3333 4444" required/>
+                </div>
+
+                <!-- date and cvv -->
+                <div id="csv">
+
+                    <div>
+                        <p class="ptag" >Expiration date  *</p>
+                        <div class="inputdiv">
+                            <input class="input_tags" type="text" placeholder="MM / YY" required/>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="ptag" >CVC / CVV  *</p>
+                        <div class="inputdiv">
+                            <input class="input_tags" type="number" placeholder="123" required/>
+                        </div>
+                    </div>
+
+                    <!-- <p class="ptag" ><u>What is this ?</u></p> -->
+                    
+                </div>
+
+                <button id="checkout">PROCEED TO CHECKOUT</button>
+            </form>
+               
+            </div>
+        </div>
+
+        <hr/>
+
+        <div id="paypaldiv">
+
+            <div id="paypal">
+                <div class="paypal">
+                    <input id="radio" type="radio" />
+                    <p id="p_card"><i class="fa-brands fa-paypal"></i> Paypal</p>
+                </div>
+                <p id="shipp">Immediate Shipping</p>
+            </div>
+
+            <div id="paypal_btn">
+
+            </div>
+
+        </div>
+
+        <hr/>
+
+        <!-- bottom part from waseem -->
+
+        <div id="bot">
+
+            <p class="one">You can also place your order via telephone.</p>
+            
+            <div>
+                <div>
+                    <i class="fa-solid fa-phone fa-4x"></i>
+                    <p class="two">CALL US</p>
+                    <p class="three"><u>+49 89 127695-101</u></p>
+                    <P class="three">Argentina: <u>0800-666-0663</u></P>
+                    <P class="three">Chile: <u>800-914-515</u></P>
+                    <p class="three">Colombia: <u>01800-518-5268</u></p>
+                    <p class="three">Mexico: <u>01-800-099-0703</u></p>
+                    <p class="three">Peru: <u>0800-78259</u></p>
+                    <p class="three">Puerto Rico: <u>1-787-303-4205</u></p>
+                    <p class="three">Available 24/7</p>
+                </div>
+                <div>
+                  <i class="fa-solid fa-envelope fa-4x"></i>
+                  <p>MAIL US</p>
+                  <p class="three"><u>customercare@mytheresa.com</u></p>
+                  <p>Please note that due to a high amount of requests, we might take a few days to get back to you. We apologize for any inconvenience this may cause.</p>
+    
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div id="copyright">
+          <p>
+            copyright © 2006-2022
+            <u>clothingo.com</u>
+          </p>
+          <p>terms of use privacy policy imprint</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
+<script src="/js/payment.js" ></script>

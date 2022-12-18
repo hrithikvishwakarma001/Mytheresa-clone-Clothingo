@@ -39,3 +39,23 @@
 .life-img-2{
   background-image: url('https://img.mytheresa.com/media/static/raw/cms/l/Life_HP_2022_CW50/CW49_Life_HP_ActboxSmall_2_2x_20221205090528.jpg?imwidth=600&imdensity=2');
 }
+
+.bo2{
+ width: 35rem;
+ line-height: 3rem;
+ margin-bottom: -2rem;
+}
+.lastGallery{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.lastGallery p{
+  margin-top: 20px;
+  font-size: 20px;
+}
+.lastGallery .cards div{
+  height: 100%;
+}

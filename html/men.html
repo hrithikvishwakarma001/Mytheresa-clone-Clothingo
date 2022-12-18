@@ -8,6 +8,8 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Men's Luxury Fashion & Designer Shopping | Mytheresa</title>
+		
+		<link rel="icon" type="image/png" sizes="16x16" href="/images/android-icon-144x144.png">
 		<link
 			href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
 			rel="stylesheet" />
@@ -23,6 +25,7 @@
 		<!-- --------------------------------------------------- -->
 
 		<link rel="stylesheet" href="/css/mens-main.css">
+		<link rel="stylesheet" href="/css/mySlider.css">
 	</head>
 	<body >
 	   	<header>
@@ -52,22 +55,24 @@
 							<h3>WELCOME!</h3>
 							<div class="account-top">
 								<input
-								id="search"
+								id="email"
 								type="text"
 								name="q"
 								placeholder="Your E-Mail"
 								value=""
 								class="input-text ff-basic-autocomplete"
+								required
 								autocomplete="off" />	
 								<input
-									id="search"
+									id="pwd"
 									type="text"
 									name="q"
 									placeholder="Password"
 									value=""
 									class="input-text ff-basic-autocomplete"
-									autocomplete="off" />			
-								<button>LOGIN</button>				
+									autocomplete="off" 
+									required/>			
+								<button onclick="loginpage()">LOGIN</button>				
 							</div>
 							<div class="account-top account-bottom">
 							   <span>If you have an account with us, log in <br>
@@ -79,7 +84,7 @@
 										  password.
 									</span>
 									<h3>Did you forget your password?</h3>		
-								<button>CREATE AN ACCOUNT</button>				
+								<button id="gotoregisterpage">CREATE AN ACCOUNT</button>				
 							</div>
 		
 						</div>
@@ -653,7 +658,7 @@
 							<p>_IT'S THE SEASON</p>
 							<h2>Smart looks</h2>
 							<div class="button-wrapper">
-								<a href="#" class=" button " >SHOP NOW</a>
+								<a href="/html/shop.html" class=" button " >SHOP NOW</a>
 							</div>
 						</div>
 					</div>
@@ -661,7 +666,155 @@
 
 
 					<!-- ----------------------SLIDER----------------------------- -->
-					<div class="slider"></div>
+					<div class="slider">
+						<div><h1>New Arrivals</h1></div>
+						     
+						  	<div class="slideshow-container">
+
+										<div class="mySlides fade">
+											<div class="div-container">
+												   <div>
+															<div class="arrival">
+																<img src="/images/arrival2.0.png" alt="">
+																<a class="add-to-wishlist icon-star-grey" tabindex="0">
+																</a>
+															</div>
+															<img src="https://img.mytheresa.com/420/475/95/jpeg/catalog/product/13/P00777806.jpg" alt="">
+																<p>GIVENCHY</p>
+																<strong>€ 2,229</strong>
+													 </div>
+												   <div>
+															<div class="arrival">
+																<img src="/images/arrival.png" alt="">
+																<a class="add-to-wishlist icon-star-grey" tabindex="0">
+																</a>
+															</div>
+															<img src="https://img.mytheresa.com/420/475/95/jpeg/catalog/product/93/P00737482.jpg" alt="">
+																<p>GUCCI</p>
+																<strong>€ 2,775</strong>
+													 </div>
+												   <div>
+															<div class="arrival">
+																<img src="/images/arrival2.0.png" alt="">
+																<a class="add-to-wishlist icon-star-grey" tabindex="0">
+																</a>
+															</div>
+															<img src="https://img.mytheresa.com/420/475/95/jpeg/catalog/product/0e/P00734044.jpg" alt="">
+																<p>CHRISTIAN LOUBOUTIN</p>
+																<strong>€ 839</strong>
+													 </div>
+												   <div>
+															<div class="arrival">
+																<img src="/images/arrival2.0.png" alt="">
+																<a class="add-to-wishlist icon-star-grey" tabindex="0">
+																</a>
+															</div>
+															<img src="https://img.mytheresa.com/420/475/95/jpeg/catalog/product/a7/P00737670.jpg" alt="">
+																<p>GUCCI</p>
+																<strong>€ 329</strong>
+													 </div>
+											</div>
+										</div>
+										<div class="mySlides fade">
+											<div class="div-container">
+												   <div>
+															<div class="arrival">
+																<img src="/images/arrival.png" alt="">
+																<a class="add-to-wishlist icon-star-grey" tabindex="0">
+																</a>
+															</div>
+															<img src="https://img.mytheresa.com/420/475/95/jpeg/catalog/product/a4/P00726570.jpg" alt="">
+																<p>GIORGIO ARMANI</p>
+																<strong>€ 8745</strong>
+													 </div>
+												   <div>
+															<div class="arrival">
+																<img src="/images/arrival2.0.png" alt="">
+																<a class="add-to-wishlist icon-star-grey" tabindex="0">
+																</a>
+															</div>
+															<img src="https://img.mytheresa.com/420/475/95/jpeg/catalog/product/ca/P00734285.jpg" alt="">
+																<p>VALENTINO</p>
+																<strong>€ 2,829</strong>
+													 </div>
+												   <div>
+															<div class="arrival">
+																<img src="/images/arrival2.0.png" alt="">
+																<a class="add-to-wishlist icon-star-grey" tabindex="0">
+																</a>
+															</div>
+															<img src="https://img.mytheresa.com/420/475/95/jpeg/catalog/product/b2/P00706286.jpg" alt="">
+																<p>OUR LEGACY</p>
+																<strong>€ 1,129</strong>
+													 </div>
+												   <div>
+															<div class="arrival">
+																<img src="/images/arrival.png" alt="">
+																<a class="add-to-wishlist icon-star-grey" tabindex="0">
+																</a>
+															</div>
+															<img src="https://img.mytheresa.com/420/475/95/jpeg/catalog/product/56/P00737581.jpg" alt="">
+																<p>GUCCI</p>
+																<strong>€ 330</strong>
+													 </div>
+												   
+											</div>
+										</div>
+										<div class="mySlides fade">
+											<div class="div-container">
+												   <div>
+															<div class="arrival">
+																<img src="/images/arrival2.0.png" alt="">
+																<a class="add-to-wishlist icon-star-grey" tabindex="0">
+																</a>
+															</div>
+															<img src="https://img.mytheresa.com/420/475/95/jpeg/catalog/product/28/P00745804.jpg" alt="">
+																<p>BOTTEGA VENETA</p>
+																<strong>€ 659</strong>
+													 </div>
+												   <div>
+															<div class="arrival">
+																<img src="/images/arrival2.0.png" alt="">
+																<a class="add-to-wishlist icon-star-grey" tabindex="0">
+																</a>
+															</div>
+															<img src="https://img.mytheresa.com/420/475/95/jpeg/catalog/product/fa/P00745712.jpg" alt="">
+																<p>ALEXANDER MCQUEEN</p>
+																<strong>€ 2,429</strong>
+													 </div>
+												   <div>
+															<div class="arrival">
+																<img src="/images/arrival2.0.png" alt="">
+																<a class="add-to-wishlist icon-star-grey" tabindex="0">
+																</a>
+															</div>
+															<img src="https://img.mytheresa.com/420/475/95/jpeg/catalog/product/6e/P00737614.jpg" alt="">
+																<p>GUCCI</p>
+																<strong>€ 729</strong>
+													 </div>
+												   <div>
+															<div class="arrival">
+																<img src="/images/arrival2.0.png" alt="">
+																<a class="add-to-wishlist icon-star-grey" tabindex="0">
+																</a>
+															</div>
+															<img src="https://img.mytheresa.com/420/475/95/jpeg/catalog/product/e6/P00739348.jpg" alt="">
+																<p>GIVENCHY</p>
+																<strong>€ 2,429</strong>
+													 </div>
+												   
+											</div>
+										</div>
+								
+										<a class="prev" onclick="plusSlides(-1)">❮</a>
+										<a class="next" onclick="plusSlides(1)">❯</a>
+										
+							   </div>
+								 
+							<div><div class="button-wrapper">
+								<a href="/html/shop.html" class=" button btn-dark " >VIEW ALL</a>
+							</div></div>
+					</div>
           <!-- ----------------------SLIDER-END----------------------------- -->
 
 					<div class="landingPoster2">
@@ -674,7 +827,155 @@
 						 </div>
 						 <div> </div>
 					</div>
-          <div class="slider"></div>
+					<div class="slider">
+						<div><h1>New Arrivals</h1></div>
+						     
+						  	<div class="slideshow-container1">
+
+										<div class="mySlides1 fade1">
+											<div class="div-container1">
+												   <div>
+															<div class="arrival">
+																<img src="/images/arrival2.0.png" alt="">
+																<a class="add-to-wishlist icon-star-grey" tabindex="0">
+																</a>
+															</div>
+															<img src="https://img.mytheresa.com/420/475/95/jpeg/catalog/product/13/P00777806.jpg" alt="">
+																<p>GIVENCHY</p>
+																<strong>€ 2,229</strong>
+													 </div>
+												   <div>
+															<div class="arrival">
+																<img src="/images/arrival.png" alt="">
+																<a class="add-to-wishlist icon-star-grey" tabindex="0">
+																</a>
+															</div>
+															<img src="https://img.mytheresa.com/420/475/95/jpeg/catalog/product/93/P00737482.jpg" alt="">
+																<p>GUCCI</p>
+																<strong>€ 2,775</strong>
+													 </div>
+												   <div>
+															<div class="arrival">
+																<img src="/images/arrival2.0.png" alt="">
+																<a class="add-to-wishlist icon-star-grey" tabindex="0">
+																</a>
+															</div>
+															<img src="https://img.mytheresa.com/420/475/95/jpeg/catalog/product/0e/P00734044.jpg" alt="">
+																<p>CHRISTIAN LOUBOUTIN</p>
+																<strong>€ 839</strong>
+													 </div>
+												   <div>
+															<div class="arrival">
+																<img src="/images/arrival2.0.png" alt="">
+																<a class="add-to-wishlist icon-star-grey" tabindex="0">
+																</a>
+															</div>
+															<img src="https://img.mytheresa.com/420/475/95/jpeg/catalog/product/a7/P00737670.jpg" alt="">
+																<p>GUCCI</p>
+																<strong>€ 329</strong>
+													 </div>
+											</div>
+										</div>
+										<div class="mySlides1 fade1">
+											<div class="div-container1">
+												   <div>
+															<div class="arrival">
+																<img src="/images/arrival.png" alt="">
+																<a class="add-to-wishlist icon-star-grey" tabindex="0">
+																</a>
+															</div>
+															<img src="https://img.mytheresa.com/420/475/95/jpeg/catalog/product/a4/P00726570.jpg" alt="">
+																<p>GIORGIO ARMANI</p>
+																<strong>€ 8745</strong>
+													 </div>
+												   <div>
+															<div class="arrival">
+																<img src="/images/arrival2.0.png" alt="">
+																<a class="add-to-wishlist icon-star-grey" tabindex="0">
+																</a>
+															</div>
+															<img src="https://img.mytheresa.com/420/475/95/jpeg/catalog/product/ca/P00734285.jpg" alt="">
+																<p>VALENTINO</p>
+																<strong>€ 2,829</strong>
+													 </div>
+												   <div>
+															<div class="arrival">
+																<img src="/images/arrival2.0.png" alt="">
+																<a class="add-to-wishlist icon-star-grey" tabindex="0">
+																</a>
+															</div>
+															<img src="https://img.mytheresa.com/420/475/95/jpeg/catalog/product/b2/P00706286.jpg" alt="">
+																<p>OUR LEGACY</p>
+																<strong>€ 1,129</strong>
+													 </div>
+												   <div>
+															<div class="arrival">
+																<img src="/images/arrival.png" alt="">
+																<a class="add-to-wishlist icon-star-grey" tabindex="0">
+																</a>
+															</div>
+															<img src="https://img.mytheresa.com/420/475/95/jpeg/catalog/product/56/P00737581.jpg" alt="">
+																<p>GUCCI</p>
+																<strong>€ 330</strong>
+													 </div>
+												   
+											</div>
+										</div>
+										<div class="mySlides1 fade1">
+											<div class="div-container1">
+												   <div>
+															<div class="arrival">
+																<img src="/images/arrival2.0.png" alt="">
+																<a class="add-to-wishlist icon-star-grey" tabindex="0">
+																</a>
+															</div>
+															<img src="https://img.mytheresa.com/420/475/95/jpeg/catalog/product/28/P00745804.jpg" alt="">
+																<p>BOTTEGA VENETA</p>
+																<strong>€ 659</strong>
+													 </div>
+												   <div>
+															<div class="arrival">
+																<img src="/images/arrival2.0.png" alt="">
+																<a class="add-to-wishlist icon-star-grey" tabindex="0">
+																</a>
+															</div>
+															<img src="https://img.mytheresa.com/420/475/95/jpeg/catalog/product/fa/P00745712.jpg" alt="">
+																<p>ALEXANDER MCQUEEN</p>
+																<strong>€ 2,429</strong>
+													 </div>
+												   <div>
+															<div class="arrival">
+																<img src="/images/arrival2.0.png" alt="">
+																<a class="add-to-wishlist icon-star-grey" tabindex="0">
+																</a>
+															</div>
+															<img src="https://img.mytheresa.com/420/475/95/jpeg/catalog/product/6e/P00737614.jpg" alt="">
+																<p>GUCCI</p>
+																<strong>€ 729</strong>
+													 </div>
+												   <div>
+															<div class="arrival">
+																<img src="/images/arrival2.0.png" alt="">
+																<a class="add-to-wishlist icon-star-grey" tabindex="0">
+																</a>
+															</div>
+															<img src="https://img.mytheresa.com/420/475/95/jpeg/catalog/product/e6/P00739348.jpg" alt="">
+																<p>GIVENCHY</p>
+																<strong>€ 2,429</strong>
+													 </div>
+												   
+											</div>
+										</div>
+								
+										<a class="prev" onclick="plusSlides1(-1)">❮</a>
+										<a class="next" onclick="plusSlides1(1)">❯</a>
+										
+							   </div>
+								 
+							<div><div class="button-wrapper">
+								<a href="/html/shop.html" class=" button btn-dark " >VIEW ALL</a>
+							</div></div>
+					</div>
           
 					<div class="landingPoster3">
 						<div class="off"></div>
@@ -687,7 +988,155 @@
 						</div>
 				 </div>
 				 
-				 <div class="slider"></div>
+				 <div class="slider">
+					<div><h1>New Arrivals</h1></div>
+							 
+							<div class="slideshow-container2">
+
+									<div class="mySlides2 fade2">
+										<div class="div-container2">
+												 <div>
+														<div class="arrival">
+															<img src="/images/arrival2.0.png" alt="">
+															<a class="add-to-wishlist icon-star-grey" tabindex="0">
+															</a>
+														</div>
+														<img src="https://img.mytheresa.com/420/475/95/jpeg/catalog/product/13/P00777806.jpg" alt="">
+															<p>GIVENCHY</p>
+															<strong>€ 2,229</strong>
+												 </div>
+												 <div>
+														<div class="arrival">
+															<img src="/images/arrival.png" alt="">
+															<a class="add-to-wishlist icon-star-grey" tabindex="0">
+															</a>
+														</div>
+														<img src="https://img.mytheresa.com/420/475/95/jpeg/catalog/product/93/P00737482.jpg" alt="">
+															<p>GUCCI</p>
+															<strong>€ 2,775</strong>
+												 </div>
+												 <div>
+														<div class="arrival">
+															<img src="/images/arrival2.0.png" alt="">
+															<a class="add-to-wishlist icon-star-grey" tabindex="0">
+															</a>
+														</div>
+														<img src="https://img.mytheresa.com/420/475/95/jpeg/catalog/product/0e/P00734044.jpg" alt="">
+															<p>CHRISTIAN LOUBOUTIN</p>
+															<strong>€ 839</strong>
+												 </div>
+												 <div>
+														<div class="arrival">
+															<img src="/images/arrival2.0.png" alt="">
+															<a class="add-to-wishlist icon-star-grey" tabindex="0">
+															</a>
+														</div>
+														<img src="https://img.mytheresa.com/420/475/95/jpeg/catalog/product/a7/P00737670.jpg" alt="">
+															<p>GUCCI</p>
+															<strong>€ 329</strong>
+												 </div>
+										</div>
+									</div>
+									<div class="mySlides2 fade2">
+										<div class="div-container2">
+												 <div>
+														<div class="arrival">
+															<img src="/images/arrival.png" alt="">
+															<a class="add-to-wishlist icon-star-grey" tabindex="0">
+															</a>
+														</div>
+														<img src="https://img.mytheresa.com/420/475/95/jpeg/catalog/product/a4/P00726570.jpg" alt="">
+															<p>GIORGIO ARMANI</p>
+															<strong>€ 8745</strong>
+												 </div>
+												 <div>
+														<div class="arrival">
+															<img src="/images/arrival2.0.png" alt="">
+															<a class="add-to-wishlist icon-star-grey" tabindex="0">
+															</a>
+														</div>
+														<img src="https://img.mytheresa.com/420/475/95/jpeg/catalog/product/ca/P00734285.jpg" alt="">
+															<p>VALENTINO</p>
+															<strong>€ 2,829</strong>
+												 </div>
+												 <div>
+														<div class="arrival">
+															<img src="/images/arrival2.0.png" alt="">
+															<a class="add-to-wishlist icon-star-grey" tabindex="0">
+															</a>
+														</div>
+														<img src="https://img.mytheresa.com/420/475/95/jpeg/catalog/product/b2/P00706286.jpg" alt="">
+															<p>OUR LEGACY</p>
+															<strong>€ 1,129</strong>
+												 </div>
+												 <div>
+														<div class="arrival">
+															<img src="/images/arrival.png" alt="">
+															<a class="add-to-wishlist icon-star-grey" tabindex="0">
+															</a>
+														</div>
+														<img src="https://img.mytheresa.com/420/475/95/jpeg/catalog/product/56/P00737581.jpg" alt="">
+															<p>GUCCI</p>
+															<strong>€ 330</strong>
+												 </div>
+												 
+										</div>
+									</div>
+									<div class="mySlides2 fade2">
+										<div class="div-container2">
+												 <div>
+														<div class="arrival">
+															<img src="/images/arrival2.0.png" alt="">
+															<a class="add-to-wishlist icon-star-grey" tabindex="0">
+															</a>
+														</div>
+														<img src="https://img.mytheresa.com/420/475/95/jpeg/catalog/product/28/P00745804.jpg" alt="">
+															<p>BOTTEGA VENETA</p>
+															<strong>€ 659</strong>
+												 </div>
+												 <div>
+														<div class="arrival">
+															<img src="/images/arrival2.0.png" alt="">
+															<a class="add-to-wishlist icon-star-grey" tabindex="0">
+															</a>
+														</div>
+														<img src="https://img.mytheresa.com/420/475/95/jpeg/catalog/product/fa/P00745712.jpg" alt="">
+															<p>ALEXANDER MCQUEEN</p>
+															<strong>€ 2,429</strong>
+												 </div>
+												 <div>
+														<div class="arrival">
+															<img src="/images/arrival2.0.png" alt="">
+															<a class="add-to-wishlist icon-star-grey" tabindex="0">
+															</a>
+														</div>
+														<img src="https://img.mytheresa.com/420/475/95/jpeg/catalog/product/6e/P00737614.jpg" alt="">
+															<p>GUCCI</p>
+															<strong>€ 729</strong>
+												 </div>
+												 <div>
+														<div class="arrival">
+															<img src="/images/arrival2.0.png" alt="">
+															<a class="add-to-wishlist icon-star-grey" tabindex="0">
+															</a>
+														</div>
+														<img src="https://img.mytheresa.com/420/475/95/jpeg/catalog/product/e6/P00739348.jpg" alt="">
+															<p>GIVENCHY</p>
+															<strong>€ 2,429</strong>
+												 </div>
+												 
+										</div>
+									</div>
+							
+									<a class="prev" onclick="plusSlides2(-1)">❮</a>
+									<a class="next" onclick="plusSlides2(1)">❯</a>
+									
+							 </div>
+							 
+						<div><div class="button-wrapper">
+							<a href="/html/shop.html" class=" button btn-dark " >VIEW ALL</a>
+						</div></div>
+				</div>
 			 </div>
 		  </main>
       <!-- ---------------------------MAIN-END-------------------------------- -->
@@ -953,5 +1402,7 @@
 	      
 	</body>
 </html>
+<script src="/js/mySlider.js"></script>
 <script src="/js/none.js"></script>
 <script src="/js/main.js"></script>
+<script src="/js/login.js"></script>
