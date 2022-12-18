@@ -58,10 +58,12 @@ signin_form.addEventListener("submit",function(event){
             // signin_email.focus();
         }
         else{
-            alert("login successfull");
             login_failed_div.innerHTML=null;
             signin_form.reset();
             signin_email.focus();
+            alert("login successfull");
+           window.location.href="/home.html";
+           window.location.replace("/home.html");
         }
 })
 
@@ -72,11 +74,8 @@ window.onload = () => {
 
 }
 
-}
 let buttons = document.querySelectorAll('#left div');
-console.log(buttons)
 
-// background-color: #f2f2f2;
 
 buttons.forEach((x) => {
     x.onclick = () => {
@@ -88,7 +87,7 @@ buttons.forEach((x) => {
             window.location.href='/html/men.html';
         }
         else if(x.innerHTML==='WOMEN'){
-            window.location.href='/home.html';
+            window.location.href='/home.htmlhome.html';
         }
         else if(x.innerHTML==='KIDS'){
             window.location.href='/html/kids.html';
