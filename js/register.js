@@ -61,10 +61,10 @@ signin_form.addEventListener("submit",function(event){
             login_failed_div.innerHTML=null;
             signin_form.reset();
             signin_email.focus();
-
             alert("login successfull");
            window.location.href="/home.html";
            window.location.replace("/home.html");
+
         }
 })
 

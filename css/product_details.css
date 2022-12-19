@@ -69,7 +69,8 @@
   
   #main{
     display: flex;
-    width: 78%;
+    /* width: 78%; */
+    width: 1180px;
     margin: auto;
     justify-content: space-around;
     margin-top: 50px;
@@ -78,14 +79,14 @@
   }
   /* image div */
   
-  #image{
+  #iimage{
     width: 55%;
     /* border: 1px solid black; */
   }
   
   /* info div */
   
-  #info{
+  #iinfo{
     width: 40%;
     /* border: 1px solid red; */
   }
@@ -102,32 +103,33 @@
   }
   
   
-  #brand{
+  #bbrand{
     font-size: 22px;
     color: black;
   }
   
-  #title{
-    font-size: 14px;
+  #ttitle{
+    font-size: 15px;
     color: #757575;
-    margin-top: -10px;
+    margin-top: 5px;
   }
   
-  #price{
-    font-size: 14px;
+  #pprice{
+    font-size: 18px;
     color: black;
-    font-weight: 600;
-    margin-top: -5px;
+    font-weight: bolder;
+    margin-top: 7px;
+    margin-bottom: 7px;
   }
   
-  #tax{
+  #ttax{
     font-size: 12px;
     color: #757575;
   }
-  #tax1{
+  #ttax1{
     font-size: 12px;
     color: #757575;
-    margin-top: -10px;
+    margin-top: 3px;
   }
   
   #size_div{
@@ -135,9 +137,10 @@
     gap: 5%;
   }
   
-  #size{
+  #ssize{
+    margin: 10px 0px;
     width: 55%;
-    padding: 5px;
+    padding: 10px;
     font-size: 14px;
     font-weight: 600;
     border: 1px solid #757575;
@@ -154,14 +157,14 @@
     #size_div{
       flex-direction: column;
     }
-    #size{
-      width: 80%;
-    }
+    /* #size{
+      width: 1000px;
+    } */
   }
   @media (max-width:750px){
-    #size{
+    /* #size{
       width: 100%;
-    }
+    } */
   }
   
   /* info > modal */
@@ -245,7 +248,7 @@
   
   .button_cart{
     font-size: 14px;
-    padding: 10px;
+    padding: 12px;
     background-color: black;
     color: white;
     width: 55%;
@@ -258,12 +261,13 @@
   
   .button_wishlist{
     font-size: 14px;
-    padding: 10px;
+    padding: 12px;
     background-color: white;
     color: black;
     margin-top: 10px;
     border: none;
     width: 55%;
+    margin-bottom: 50px;
   }
   .button_wishlist:hover{
     background-color: #cdcdcd;
@@ -288,6 +292,7 @@
   
   #ship{
     font-size: 14px;
+    /* margin-bottom: 20px; */
   }
   
   /* accodion */
@@ -324,7 +329,7 @@
     content: "\2212";
   }
   
-  .panel {
+  .ppanel {
     color: #757575;
     font-size: 14px;
     padding: 0 18px;
@@ -333,7 +338,7 @@
     overflow: hidden;
     transition: max-height 0.2s ease-out;
   }
-  .panel li{
+  .ppanel .lli{
     margin-top: 5px;
   }
   .pp{
