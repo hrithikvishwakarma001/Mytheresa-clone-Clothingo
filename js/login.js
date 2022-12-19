@@ -22,10 +22,18 @@ function loginpage(){
         );
 
         if(!exist){
-            alert("incorrect passoword")
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'Create account first!'
+              })
         }
         else{
-            alert("login successfull");
+            Swal.fire(
+                'Good job',
+                'Login sccessfull',
+                'success'
+              )
             login_failed_div.innerHTML=null;
             signin_email.reset();
             signin_pwd.reset();
