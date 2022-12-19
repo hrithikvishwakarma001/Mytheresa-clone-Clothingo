@@ -62,7 +62,7 @@ signin_form.addEventListener("submit",function(event){
             login_failed_div.innerHTML=null;
             signin_form.reset();
             signin_email.focus();
-            window.location.href="/home.html"
+            window.location.href="/html/user.html"
         }
 })
 
