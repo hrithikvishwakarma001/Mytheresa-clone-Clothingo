@@ -58,11 +58,13 @@ signin_form.addEventListener("submit",function(event){
             // signin_email.focus();
         }
         else{
-            alert("login successfull");
             login_failed_div.innerHTML=null;
             signin_form.reset();
             signin_email.focus();
-            window.location.href="/html/user.html"
+            alert("login successfull");
+           window.location.href="/home.html";
+           window.location.replace("/home.html");
+
         }
 })
 
@@ -70,9 +72,9 @@ window.onload = () => {
     document.body.style.opacity = 1;
     document.body.style.visibility = 'visible';
 }
-let buttons = document.querySelectorAll('#left div');
 
-// background-color: #f2f2f2;
+
+let buttons = document.querySelectorAll('#left div');
 
 buttons.forEach((x) => {
     x.onclick = () => {
@@ -84,7 +86,7 @@ buttons.forEach((x) => {
             window.location.href='/html/men.html';
         }
         else if(x.innerHTML==='WOMEN'){
-            window.location.href='/home.html';
+            window.location.href='/home.htmlhome.html';
         }
         else if(x.innerHTML==='KIDS'){
             window.location.href='/html/kids.html';
