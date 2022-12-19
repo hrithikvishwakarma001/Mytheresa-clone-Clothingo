@@ -65,7 +65,7 @@ signin_form.addEventListener("submit", function (event) {
 		signin_email.focus();
 		Swal.fire("Good job!", "Login sccessfull", "success");
 		setTimeout(() => {
-			window.location.href = "/home.html";
+			window.location.href = "/html/user.html";
 		}, 4000);
         setTimeout(() => {
          let timerInterval;

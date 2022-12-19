@@ -1009,3 +1009,31 @@
 <script src="/js/none.js"></script>
 <script src="/js/main.js"></script>
 <script src="/js/login.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+	function gotohomepage(){
+        
+				Swal.fire({
+				title: 'Are you sure?',
+				text: "You want to logout!",
+				icon: 'warning',
+				showCancelButton: true,
+				confirmButtonColor: '#3085d6',
+				cancelButtonColor: '#d33',
+				confirmButtonText: 'Yes, logout!'
+			}).then((result) => {
+				if (result.isConfirmed) {
+					Swal.fire(
+						'Logged out',
+						'loging out successful.',
+						'success'
+					)
+					setTimeout(function(){
+						window.location.href = '/home.html'
+					}, 2500)
+				}
+			})
+
+
+	}
+</script>
