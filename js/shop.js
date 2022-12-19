@@ -2387,6 +2387,7 @@ function itemDetails(item){
 let page_btn=document.querySelectorAll(".mypage");
 page_btn[0].style.color="blue"
 
+
 for(let i=0;i<page_btn.length;i++){
   page_btn[i].addEventListener("click",function(event){
     if(event.target.innerText=="1"){
@@ -2562,10 +2563,3 @@ window.onload = () => {
   document.body.style.opacity = 1;
   document.body.style.visibility = 'visible';
 }
-
-
-
-
-
-
-

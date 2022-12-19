@@ -61,6 +61,7 @@ signin_form.addEventListener("submit",function(event){
             login_failed_div.innerHTML=null;
             signin_form.reset();
             signin_email.focus();
+
             alert("login successfull");
            window.location.href="/home.html";
            window.location.replace("/home.html");
@@ -70,12 +71,10 @@ signin_form.addEventListener("submit",function(event){
 window.onload = () => {
     document.body.style.opacity = 1;
     document.body.style.visibility = 'visible';
-
-
 }
 
-let buttons = document.querySelectorAll('#left div');
 
+let buttons = document.querySelectorAll('#left div');
 
 buttons.forEach((x) => {
     x.onclick = () => {
@@ -97,4 +96,3 @@ buttons.forEach((x) => {
         }
     }
 })
-

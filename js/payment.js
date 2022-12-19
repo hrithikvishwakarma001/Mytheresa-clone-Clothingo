@@ -1,3 +1,9 @@
+window.onload=()=>{
+    document.body.style.opacity=1;
+    document.body.style.visibility="visible";
+    
+}
+
 let cart = document.querySelector("#card");
 
 let paypal = document.querySelector("#paypal");
@@ -11,7 +17,6 @@ let checkout = document.querySelector("#checkout");
 cart.addEventListener('click',function(){
     // paypal.innerHTML="";
     paypal_btn.innerHTML=""; 
-
     details.innerHTML=
     `<form>
     <div class="icons">
@@ -62,16 +67,6 @@ paypal.addEventListener('click',function(){
     paypal_btn.innerHTML=
     `<button id="checkout">PROCEED TO CHECKOUT</button>`
 })
-
-checkout.addEventListener("click",function(){
-    window.location.href="../thankyou.html";
-})
-
-window.onload=()=>{
-    document.body.style.opacity=1;
-    document.body.style.visibility="visible";
-    
-}
 
 checkout.onclick=()=>{
     location.href="thankyou.html"
