@@ -22,7 +22,7 @@ proceedbtn.addEventListener("click",(e)=>{
     localStorage.setItem("delivryadd",JSON.stringify(lsdata))
     setTimeout(()=>{
    window.location.href="payment.html"
-    },2000)
+    },1000)
  
 })
 
