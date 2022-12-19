@@ -6,8 +6,643 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/css/wishlist.css"/>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+    rel="stylesheet" />
+<link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+<link rel="stylesheet" href="/css/header.css" />
+<link rel="stylesheet" href="/css/none.css">
+<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="/css/editorial.css">
+<link rel="stylesheet" href="/css/footer.css">
+<link rel="stylesheet" href="/css/cart.css">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/android-icon-144x144.png">
 </head>
 <body>
+
+    <header>
+        <div class="page">
+            <nav>
+                <div id="head">
+                    <div id="left">
+                        <div>WOMEN</div>
+                        <div>MEN</div>
+                        <div>KIDS</div>
+                        <div>LIFE</div>
+                    </div>
+                    <div id="right">
+                        <ul>
+                            <li>Signup for Newsletter</li>
+                            <li>My account</li>
+                            <li class="wish">
+                                My wishlist
+                                <span><i class="ri-heart-3-line"></i></span>
+                            </li>
+                            <li>Kazakhastan | English</li>
+                        </ul>
+                    </div>
+                    <div id="account-popup">
+                        <i class="ri-close-line close"></i>
+                        <i class=" bx bx2 bx-account  bxs-up-arrow"></i>
+                        <h3>WELCOME!</h3>
+                        <div class="account-top">
+                            <input
+                            id="search"
+                            type="text"
+                            name="q"
+                            placeholder="Your E-Mail"
+                            value=""
+                            class="input-text ff-basic-autocomplete"
+                            autocomplete="off" />	
+                            <input
+                                id="search"
+                                type="text"
+                                name="q"
+                                placeholder="Password"
+                                value=""
+                                class="input-text ff-basic-autocomplete"
+                                autocomplete="off" />			
+                            <button>LOGIN</button>				
+                        </div>
+                        <div class="account-top account-bottom">
+                           <span>If you have an account with us, log in <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        using your email address and <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        &nbsp;&nbsp;&nbsp;
+                                      password.
+                                </span>
+                                <h3>Did you forget your password?</h3>		
+                            <button>CREATE AN ACCOUNT</button>				
+                        </div>
+    
+                    </div>
+                </div>
+            </nav>
+            <div id="logo">
+                <div><img src="/images/Clothingo2.0.png" alt="" /></div>
+                <div id="shoppingBag">
+                    <div id="shoppingBagIcon">
+                        <span class="label">SHOPPING BAG</span>
+                        <span class="count icon icon-cart">0</span>
+                    </div>
+                </div>
+            </div>
+            <div class="stick">
+                <div id="head-title">
+                    <div id="title">
+                        <ul>
+                            <li>NEW ARRIVALS</li>
+                            <li>Designer</li>
+                            <li>cLOTHING</li>
+                            <li>SHOES</li>
+                            <li>bags</li>
+                            <li>accessories</li>
+                            <li>jewelry</li>
+                            <li>fastive season</li>
+                            <li>sale</li>
+                        </ul>
+                    </div>
+                    <div id="search">
+                        <label for="search"
+                            ><span class="icon icon-search">Search</span></label
+                        >
+                        <input
+                            id="search"
+                            type="text"
+                            name="q"
+                            placeholder="Search for..."
+                            value=""
+                            class="input-text ff-basic-autocomplete"
+                            autocomplete="off" />
+                        <div id="hero"></div>
+                    </div>
+                </div>
+                <hr>
+                <div class="saleTime">
+                    <p>Enjoy free shipping for a short time only</p>
+                </div>
+            </div>
+    
+    
+                <div class="popup">
+                    <div class="just">
+                        <i class='bx bxs-up-arrow'></i>
+                        <span>JUST IN</span>
+                        <span>DISCOVER</span>
+                    </div>
+                    <div class="box">
+                        <div class="left-box">
+                            <span>This week</span>
+                            <span>Previous weeks</span>
+                            <span>Clothing</span>
+                            <span>Shoes</span>
+                            <span>Bags</span>
+                            <span>Accessories</span>
+                            <span>jewelry</span>
+                        </div>
+                        <div class="left-box">
+                            <span>Party</span>
+                            <span>Vacation</span>
+                            <span>Ski</span>
+                            <span>Outerwear</span>
+                            <span>Loungewear</span>
+                            <span>Essentials</span>
+                            <span>Stories</span>
+                            <span>New season</span>
+                        </div>
+                    </div>
+                    <div class="poster">
+                        <div class="title-and-button">
+                            <h2 class="text">Cruise 2023</h2>
+                            <div class="button-wrapper">
+                                <a href="#" class=" button banner-button btn-light" id="qa-women-new-season-899519419" name="qa-women-new-season-899519419">SHOP NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup popup2">
+                    <div class="just just2">
+                        <i class='bx bx2 bxs-up-arrow'></i>
+                        <span>TOP 20</span> 
+                        <span> 
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            BRAND HIGHLIGHTS</span>
+                    </div>
+                    <div class="box box2">
+                        <div class="left-box left-box2">
+                            <span>TAcne Studios</span>
+                            <span>Alexander McQueen
+                            </span>
+                            <span>Balenciaga</span>
+                            <span>Balmain</span>
+                            <span>Bottega Veneta</span>
+                            <span>Brunello Cucinelli</span>
+                            <span>Burberry</span>
+                            <span>Chloé</span>
+                            <span>Christian Louboutin</span>
+                            <span>Dolce&Gabbana</span>
+                        </div>
+                        <div class="left-box left-box2">
+                            <span>Gianvito Rossi</span>
+                            <span>Givenchy</span>
+                            <span>Gucci</span>
+                            <span>Isabel Marant</span>
+                            <span>Jimmy Choo</span>
+                            <span>Saint Laurent</span>
+                            <span>Valentino Garavani</span>
+                            <span>Moncler</span>
+                            <span>Loewe</span>
+                            <span>Designers A-Z</span>
+                        </div>
+                        <div class="left-box left-box2">
+                            <span>Aqua77ura</span>
+                            <span>Celine Eyewear</span>
+                            <span>Dior Eyewear</span>
+                            <span>Eres</span>
+                            <span>Mugle</span>
+                            <span>Essentials</span>
+                            <span>Totéme</span>
+                            <span>Jean Paul Gaultier</span>
+                        </div>
+                    </div>
+                    <div class="poster poster2">
+                        <div class="title-and-button">
+                            <h2 class="text">PARIS TAXES X MYTHERESA</h2>
+                            <div class="button-wrapper">
+                                <a href="#" class=" button banner-button btn-light" id="qa-women-new-season-899519419" name="qa-women-new-season-899519419">SHOP NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup popup2 popup3">
+                    <div class="just just2">
+                        <i class='bx bx2 bx3 bxs-up-arrow'></i>
+                        <span>
+                            SHOP BY CATEGORY
+            &nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;
+                            TOP BRANDS
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            DISCOVER
+                        </span>
+                    </div>
+                    <div class="box box2 ">
+                        <div class="left-box left-box2">
+                            <span>Dresses</span>
+                            <span>Jackets</span>
+                            <span>Coats</span>
+                            <span>Tops</span>
+                            <span>Knitwear</span>
+                            <span>Pants</span>
+                            <span>Skirts</span>
+                            <span>Jeans</span>
+                            <span>Short Louboutin</span>
+                            <span>Dolce&Skiwear</span>
+                        </div>
+                        <div class="left-box left-box2">
+                            <span>Alexander McQueen</span>
+                            <span>Balenciaga</span>
+                            <span>Bottega Veneta</span>
+                            <span>Isabel Marant</span>
+                            <span>Jimmy Choo</span>
+                            <span>Brunello Cucinelli</span>
+                            <span>Valentino Garavani</span>
+                            <span>Moncler</span>
+                            <span>Loewe</span>
+                            <span>Designers A-Z</span>
+                        </div>
+                        <div class="left-box left-box2">
+                            <span>New Arrivals</span>
+                            <span>Exclusives Eyewear</span>
+                            <span>Dior Eyewear</span>
+                            <span>Essentials</span>
+                            <span>Mugle</span>
+                            <span>Essentials</span>
+                            <span>Party Dresses</span>
+                            <span>Jean Paul Gaultier</span>
+                        </div>
+                    </div>
+                    <div class="poster poster2 poster3">
+                        <div class="title-and-button">
+                            <h2 class="text">COATS</h2>
+                            <div class="button-wrapper">
+                                <a href="#" class=" button banner-button btn-light" id="qa-women-new-season-899519419" name="qa-women-new-season-899519419">SHOP NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup popup2 popup3 popup4">
+                    <div class="just just2">
+                        <i class='bx bx2  bx4 bxs-up-arrow'></i>
+                        <span>
+                            SHOP BY CATEGORY
+            &nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;
+                            TOP BRANDS
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            DISCOVER
+                        </span>
+                    </div>
+                    <div class="box box2">
+                        <div class="left-box left-box2">
+                            <span>An kle Boots</span>
+                            <span>Boots
+                            </span>
+                            <span>Pumps</span>
+                            <span>Sandals</span>
+                            <span>Sneakers Veneta</span>
+                            <span>Trending  Cucinelli</span>
+                            <span>Espadrilles</span>
+                            <span>Chloé</span>
+                            <span>Heeled  Louboutin</span>
+                            <span>Bridal & Espadrilles</span>
+                        </div>
+                        <div class="left-box left-box2">
+                            <span>Amina Muaddi</span>
+                            <span>Aquazzura</span>
+                            <span>Balenciaga</span>
+                            <span>Christian Louboutin
+                                Veneta</span>
+                            <span>Gianvito Rossi
+                            </span>
+                            <span>Saint Laurent</span>
+                            <span>Roger  Garavani</span>
+                            <span>Moncler</span>
+                            <span>Loewe</span>
+                            <span>Show  A-Z</span>
+                        </div>
+                        <div class="left-box left-box2">
+                            <span>New Arrivals</span>
+                            <span>Exclusives Eyewear</span>
+                            <span>Dior Eyewear</span>
+                            <span>Essentials</span>
+                            <span>Mugle</span>
+                            <span>Essentials</span>
+                            <span>Party Dresses</span>
+                            <span>Jean Paul Gaultier</span>
+                        </div>
+                    </div>
+                    <div class="poster poster2 poster3  poster4">
+                        <div class="title-and-button">
+                            <h2 class="text">WINTERS BOOTS</h2>
+                            <div class="button-wrapper">
+                                <a href="#" class=" button banner-button btn-light" id="qa-women-new-season-899519419" name="qa-women-new-season-899519419">SHOP NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup popup2 popup3 popup4 popup5">
+                    <div class="just just2">
+                        <i class='bx bx2 bx5 bxs-up-arrow'></i>
+                        <span>
+                            SHOP BY CATEGORY
+            &nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;
+                            TOP BRANDS
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            DISCOVER
+                        </span>
+                    </div>
+                    <div class="box box2">
+                        <div class="left-box left-box2">
+                            <span>Shoulder Bags</span>
+                            <span>Crossb0dy Bags
+                            </span>
+                            <span>Tote Bags</span>
+                            <span>Clutches</span>
+                            <span>Evening Bags</span>
+                            <span>Top-Handle Bags</span>
+                            <span>Mini Bags</span>
+                            <span>Bucket Bags</span>
+                            <span>Travel & Luggage</span>
+                            <span>Trending Bags</span>
+                        </div>
+                        <div class="left-box left-box2">
+                            <span>Balenciaga</span>
+                            <span>Christian Louboutin</span>
+                            <span>Gucci</span>
+                            <span>Dolce&Gabbana</span>
+                            <span>Jimmy Choo</span>
+                            <span>Saint Laurent</span>
+                            <span>Saint Laurent</span>
+                            <span>Moncler</span>
+                            <span>Loewe</span>
+                            <span>Jacquemus A-Z</span>
+                        </div>
+                        <div class="left-box left-box2">
+                            <span>New Arrivals</span>
+                            <span>Exclusives Eyewear</span>
+                            <span>Dior Eyewear</span>
+                            <span>Essentials</span>
+                            <span>Mugle</span>
+                            <span>Essentials</span>
+                            <span>Party Dresses</span>
+                            <span>Jean Paul Gaultier</span>
+                        </div>
+                    </div>
+                    <div class="poster poster2 poster3 poster4 poster5">
+                        <div class="title-and-button">
+                            <h2 class="text">SHOULDER BAGS</h2>
+                            <div class="button-wrapper">
+                                <a href="#" class=" button banner-button btn-light" id="qa-women-new-season-899519419" name="qa-women-new-season-899519419">SHOP NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup popup2 popup3 popup4 popup5 popup6">
+                    <div class="just just2">
+                        <i class='bx bx2 bx6 bxs-up-arrow'></i>
+                        <span>
+                            SHOP BY CATEGORY
+            &nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;
+                            TOP BRANDS
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            DISCOVER
+                        </span>
+                    </div>
+                    <div class="box box2">
+                        <div class="left-box left-box2">
+                            <span>Hats</span>
+                            <span>Sunglasses
+                            </span>
+                            <span>Sc arves</span>
+                            <span>Belts</span>
+                            <span>Small Leather Goods</span>
+                            <span>Hair Accessories</span>
+                            <span>Winter Accessories</span>
+                            <span>Gloves</span>
+                            <span>Sports</span>
+                            <span>Glasses</span>
+                            <span>Lifestyle</span>
+                            <span>Gifts</span>
+                        </div>
+                        <div class="left-box left-box2">
+                            <span>Acne Studios</span>
+                            <span>Balenciaga</span>
+                            <span>Bottega Veneta
+                            </span>
+                            <span>Isabel Marant</span>
+                            <span>Jimmy Choo</span>
+                            <span>Saint Laurent</span>
+                            <span>Valentino Garavani</span>
+                            <span>Moncler</span>
+                            <span>Burberry</span>
+                            <span>Jacquemus A-Z</span>
+                        </div>
+                        <div class="left-box left-box2">
+                            <span>New Arrivals</span>
+                            <span>Exclusives Eyewear</span>
+                            <span>Dior Eyewear</span>
+                            <span>Essentials</span>
+                            <span>Mugle</span>
+                            <span>Essentials</span>
+                            <span>Party Dresses</span>
+                            <span>Jean Paul Gaultier</span>
+                        </div>
+                    </div>
+                    <div class="poster poster2 poster3 poster4 poster5 poster6">
+                        <div class="title-and-button">
+                            <h2 class="text">BEANIES</h2>
+                            <div class="button-wrapper">
+                                <a href="#" class=" button banner-button btn-light" id="qa-women-new-season-899519419" name="qa-women-new-season-899519419">SHOP NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup popup2 popup3 popup4 popup5 popup6 popup7">
+                    <div class="just just2">
+                        <i class='bx bx2 bx7 bxs-up-arrow'></i>
+                        <span>
+                            SHOP BY CATEGORY
+            &nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;
+                            TOP BRANDS
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            DISCOVER
+                        </span>
+                    </div>
+                    <div class="box box2">
+                        <div class="left-box left-box2">
+                            <span>Fine Jewelry</span>
+                            <span>Demi-Fine Jewelry
+                            </span>
+                            <span>Fashion Jewelry
+                            </span>
+                            <span>Bracelets</span>
+                            <span>Ear rings</span>
+                            <span>Necklaces</span>
+                            <span>Burberry</span>
+                            <span>Rings</span>
+                            <span>Watches</span>
+                        </div>
+                        <div class="left-box left-box2">
+                            <span>Eéra</span>
+                            <span>Ileana Makri</span>
+                            <span>Gucci</span>
+                            <span>Shay Jewelry</span>
+                            <span>Nadine Aysoy</span>
+                            <span>Saint Laurent</span>
+                            <span>Jade Trau</span>
+                            <span>Moncler</span>
+                            <span>Loewe</span>
+                            <span>Spinelli Kilcollin A-Z</span>
+                            <span>Suzanne Kalan</span>
+                        </div>
+                        <div class="left-box left-box2">
+                            <span>New Arrivals</span>
+                            <span>Exclusives Eyewear</span>
+                            <span>Dior Eyewear</span>
+                            <span>Essentials</span>
+                            <span>Mugle</span>
+                            <span>Essentials</span>
+                            <span>Party Dresses</span>
+                            <span>Jean Paul Gaultier</span>
+                        </div>
+                    </div>
+                    <div class="poster poster2 poster3 poster7">
+                        <div class="title-and-button">
+                            <h2 class="text">GOLDEN JEWELRY</h2>
+                            <div class="button-wrapper">
+                                <a href="#" class=" button banner-button btn-light" id="qa-women-new-season-899519419" name="qa-women-new-season-899519419">SHOP NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup fastive">
+                    <div class="just">
+                        <i class='bx bx2 bx7 bx8 bxs-up-arrow'></i>
+                    </div>
+                    <div class="fastive-box">
+                         <div class="grid g1">
+                            <div> <p>FAMILY FASTIVITIES</p> </div> 
+                        </div>
+                         <div class="grid g2">
+                            <div> <p>FASTIVE SHOES</p> </div> 
+                         </div>
+                         <div class="grid g3">
+                            <div> <p>COCKTAIL</p> </div> 
+                         </div>
+                         <div class="grid g4">
+                            <div> <p>GLAMOROUS BAGS</p> </div> 
+                         </div>
+                         <div class="grid g5">
+                            <div> <p>GIFTS FOR HER</p> </div> 
+                         </div>
+                         <div class="grid g6">
+                            <div> <p>BLACK TIE</p> </div> 
+                         </div>
+                         <div class="grid g7">
+                            <div> <p>DAZZELING JEWELRY</p> </div> 
+                         </div>
+                         <div class="grid g8">
+                            <div> <p>GIFTS FOR HIM</p> </div> 
+                         </div>
+                    </div>
+                </div>
+                <div class="popup sale">
+                    <div class="just just2">
+                        <i class='bx bx2 bx7 bx9 bxs-up-arrow'></i>
+                        <span>
+                            SHOP BY CATEGORY
+                        </span>
+                    </div>
+                    <div class="box box2">
+                        <div class="left-box left-box2">
+                            <span>Clothing</span>
+                            <span>Shoes</span>
+                            <span>Bags</span>
+                            <span>Accessories</span>
+                            <span>Jewelry</span>
+                            <span>Previous Seasons</span>
+                            <span>Extra</span>
+                            <span>Best of Sale</span>
+                        </div>
+                    </div>
+                    <div class="x-sale">
+                        <div class="title-and-button">
+                            <h2 class="text-sale">SALE</h2>
+                            <div class="button-wrapper">
+                                <a href="#" class=" button btn-dark" >SHOP NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </header>
+
     <div id="main">
         <p id="number"></p>
         <hr/>
@@ -16,6 +651,57 @@
                 
         </div>
     </div>
+
+    <div id="footerpara">
+        <p>you can also place your order via telephone.</p>
+    </div>
+    <div id="cartfooter">
+        <div>
+            <div><i class="ri-phone-fill"></i></div>
+            <div id="callusdiv">
+                <h3 id="cfh3">CALL US</h3>
+                <span class="footercart" ><u >+49 89 127695-101</u> </span><br>
+                <span class="footercart">Argentina: <u class="footercart">0800-666-0663</u></span> <br>
+                <span class="footercart">Chile: <u class="footercart">800-914-515</u></span><br>
+                <span class="footercart">Colombia: <u class="footercart">01800-518-5268</u></span><br>
+                <span class="footercart">Mexico: <u class="footercart">01-800-099-0703</u></span> <br>
+                <span class="footercart">Peru: <u class="footercart">0800-78259</u></span> <br>
+                <span class="footercart">Puerto Rico: <u class="footercart">1-787-303-4205</u></span><br>
+                <div class="marginfooter"><span  class="footercart">Available 24/7</span><br></div>
+                
+            </div>   
+        </div>
+        <div>
+            <div>
+                <i class="ri-mail-fill"></i>
+            </div>
+            <div id="callusdiv">
+                <h3 id="cfh3">MAIL US</h3>
+                <span class="footercart">customercare@mytheresa.com</span> <br>
+                <div id="spanfooter">
+                    <span class="footercart">Please note that due to a high amount
+                        of requests, we might take a few days
+                        to get back to you. We apologize for
+                        any inconvenience this may cause</span>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div id="finalfootercart">
+        <div>
+            <p>copyright 2006-2022 mytherese.com</p>
+        </div>
+        <div style="display: flex ;">
+            <div style=" margin-right: 13px;">terms of use</div>
+            <div style=" margin-right: 13px;">privacy policy</div>
+            <div style=" margin-right: 13px;">imprint</div>
+        </div>
+    </div>
 </body>
 </html>
+<script src="/js/none.js"></script>
 <script src="/js/wishlist.js"></script>
+<script src="/js/main.js"></script>
