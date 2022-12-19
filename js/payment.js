@@ -69,5 +69,12 @@ paypal.addEventListener('click',function(){
 })
 
 checkout.onclick=()=>{
-    location.href="thankyou.html"
+    if(input_tag.value=="" || input_tags.value==""){
+
+    }
+    else{
+        location.href="thankyou.html"
+    }
+    
 }
+
