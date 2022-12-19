@@ -67,13 +67,13 @@ var splide = new Splide("#main-slider", {
   var modal = document.getElementById("myModal");
   
   // opens the modal
-  var btn = document.getElementById("myBtn");
+  var btnn = document.getElementById("myBtn");
   
   // closes the modal
   var span = document.getElementsByClassName("close")[0];
   
   // When the user clicks the button, open the modal 
-  btn.onclick = function() {
+  btnn.onclick = function() {
     modal.style.display = "block";
   }
   
@@ -107,9 +107,9 @@ var splide = new Splide("#main-slider", {
   let image6 = document.querySelector(".image6");
   let image7 = document.querySelector(".image7");
   let image8 = document.querySelector(".image8");
-  let brand = document.getElementById("brand");
-  let title = document.getElementById("title");
-  let price = document.getElementById("price");
+  let bbrand = document.getElementById("bbrand");
+  let ttitle = document.getElementById("ttitle");
+  let ppprice = document.getElementById("pprice");
   let choose_size = document.getElementById("choose_size");
   let size1 = document.getElementById("size1");
   let size2 = document.getElementById("size2");
@@ -121,8 +121,8 @@ var splide = new Splide("#main-slider", {
   const get_item=(data) => {
 
         // getting images
-        let image=document.createElement("img");
-        image.src=data.image;
+        let image10=document.createElement("img");
+        image10.src=data.image;
         let image11=document.createElement("img");
         image11.src=data.image;
         let image12=document.createElement("img");
@@ -157,7 +157,7 @@ var splide = new Splide("#main-slider", {
         })
 
        
-        image1.append(image);
+        image1.append(image10);
         image2.append(image11);
         image3.append(image12);
         image4.append(image13);
@@ -166,9 +166,9 @@ var splide = new Splide("#main-slider", {
         image7.append(image16);
         image8.append(image17);
 
-        title.append(product);
+        ttitle.append(product);
 
-        price.append(pprice);
+        ppprice.append(pprice);
 
         // choose_size
         // choose_size.append(data.choose_size);

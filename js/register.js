@@ -95,6 +95,7 @@ signin_form.addEventListener("submit", function (event) {
 	}
 });
 
+
 window.onload = () => {
 	document.body.style.opacity = 1;
 	document.body.style.visibility = "visible";
