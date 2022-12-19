@@ -1,10 +1,8 @@
 // saleTime
-
 window.onload = () => {
     document.body.style.opacity = 1;
     document.body.style.visibility = 'visible';
 }
-
 let cart_quantity=localStorage.getItem("cartquantity");
 console.log(cart_quantity)
 
@@ -110,6 +108,7 @@ btn.onclick = () => {
 }
 
 // smooth loading of the page when reloading the page or going to another page from the same website  
+
 
 let logo = document.querySelector('#logo > div > img');
 logo.onclick = () => {

@@ -29,5 +29,9 @@ function loginpage(){
             login_failed_div.innerHTML=null;
             signin_email.reset();
             signin_pwd.reset();
+            window.location.href="/html/user.html"
         }
+}
+function gotohomepage(){
+    window.location.href="home.html";
 }
