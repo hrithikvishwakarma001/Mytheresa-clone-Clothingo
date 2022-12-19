@@ -189,8 +189,16 @@ function addToCart(data) {
   data.quant=1;
   // console.log(data)
   cartArr.push(data);
-  alert(`${data.product_name} has been added to cart`);
+  // alert(`${data.product_name} has been added to cart`);
   // console.log(cartArr);
+  Swal.fire({
+    title: 'Added to cart',
+    text: data.product_name,
+    imageUrl: data.image,
+    imageWidth: 250,
+    imageHeight: 300,
+    imageAlt: 'Custom image',
+  })
   localStorage.setItem("cartitems",JSON.stringify(cartArr));
 }
 
@@ -200,18 +208,63 @@ function addToWishlist(data) {
   // console.log(data);
   data.quantity=1;
   WishlistArr.push(data);
-  alert(`${data.product_name} has been added to Wishlist`);
+  // alert(`${data.product_name} has been added to Wishlist`);
+  // "product_image href"
+  console.log(`${data.image} has been added to Wishlist`)
+  Swal.fire({
+    title: 'Added to Wishlist',
+    text: data.product_name,
+    imageUrl: data.image,
+    imageWidth: 250,
+    imageHeight: 300,
+    imageAlt: 'Custom image',
+  })
   // console.log(WishlistArr);
   localStorage.setItem("wishlist",JSON.stringify(WishlistArr));
 }
 
-
-
-let button_cart = document.querySelector(".button_cart");
-button_cart.onclick=()=>{
-  window.location.href="cart.html";
+let button_cart2 = document.querySelector(".button_cart");
+button_cart2.onmouseover=()=>{
+   button_cart2.style.cursor="pointer";
 }
-// let wishList = document.querySelector(".button_wishlist");
-// wishList.onclick=()=>{
-//   window.location.href="wishlist.html";
-// }
+
+let button_cart = document.querySelector("#goCart");
+button_cart.onmouseover=()=>{
+   button_cart.style.cursor="pointer";
+}
+button_cart.onclick=()=>{
+  setTimeout(()=>{
+    window.location.href="cart.html";
+  },4000)
+  setTimeout(() => {
+    let timerInterval;
+       Swal.fire({
+           title: "Cart page redirecting...",
+           html: "I will close in <b></b> milliseconds.",
+           timer: 2000,
+           timerProgressBar: true,
+           didOpen: () => {
+               Swal.showLoading();
+               const b = Swal.getHtmlContainer().querySelector("b");
+               timerInterval = setInterval(() => {
+                   b.textContent = Swal.getTimerLeft();
+               }, 100);
+           },
+           willClose: () => {
+               clearInterval(timerInterval);
+           },
+       }).then((result) => {
+           /* Read more about handling dismissals below */
+           if (result.dismiss === Swal.DismissReason.timer) {
+               console.log("I was closed by the timer");
+           }
+       });   
+   }, 2000);
+}
+
+
+let wishList = document.querySelector(".button_wishlist");
+  
+wishList.onmouseover=()=>{
+  wishList.style.cursor="pointer";
+}

@@ -23,6 +23,7 @@ proceedbtn.addEventListener("click",(e)=>{
     setTimeout(()=>{
    window.location.href="payment.html"
     },1000)
+
  
 })
 

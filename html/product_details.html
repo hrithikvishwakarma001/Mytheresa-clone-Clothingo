@@ -4,12 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Product details </title>
     <link rel="stylesheet" href='/css/product_details.css'/>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.1/dist/css/themes/splide-skyblue.min.css"
     />
+    <link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="/images/android-icon-144x144.png" />
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.1/dist/js/splide.min.js">
@@ -889,6 +894,7 @@
 
       <button class="button_cart">Add to Shopping Bag</button>
       <button class="button_wishlist">Add to Wishlist <i class="fa-regular fa-heart"></i></button>
+      <button style="background-color: rgb(0, 0, 0);position: relative;bottom: 50px;" class="button_cart" id="goCart">Got to cart</button>
 
       <p id="ship"><b>Free Shipping </b>on all orders for a limited time only.</p>
 
@@ -989,6 +995,7 @@
 </div>
 </body>
 </html>
-<script src="/js/main.js"></script>
-<script src="/js/none.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="/js/product_details.js"></script>
+<script src="/js/none.js"></script>
+<script src="/js/main.js"></script>
