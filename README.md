@@ -2,7 +2,7 @@
 
 ![BeFunky-collage](https://user-images.githubusercontent.com/104666876/208307949-419a681f-aed5-42ce-9911-f9acd87569b5.png)
 
-# clothingo
+# Clothingo
 clothingo is the finest edit in luxury fashion for women, men and kids. We have over 200 of the best international designers, 600 new arrivals each week, fast and reliable delivery, excellent customer service, utmost security and data protection, and free returns and exchanges within 30 days.
 
 
