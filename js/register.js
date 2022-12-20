@@ -16,7 +16,7 @@ signup_form.addEventListener("submit", function (event) {
 		lname = last_name.value,
 		email = emails.value,
 		pwd = password.value;
-
+  localStorage.setItem("fname", fname+" "+'Signout');
 	let exist =
 		formData.length &&
 		JSON.parse(localStorage.getItem("signup_data")).some(
@@ -65,12 +65,13 @@ signin_form.addEventListener("submit", function (event) {
 		signin_email.focus();
 		Swal.fire("Good job!", "Login sccessfull", "success");
 		setTimeout(() => {
+
 			window.location.href = "/html/user.html";
 		}, 4000);
         setTimeout(() => {
          let timerInterval;
             Swal.fire({
-                title: "Redirecting...",
+                title: "Home page redirecting...",
                 html: "I will close in <b></b> milliseconds.",
                 timer: 2000,
                 timerProgressBar: true,
