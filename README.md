@@ -5,11 +5,6 @@
 # clothingo
 clothingo is the finest edit in luxury fashion for women, men and kids. We have over 200 of the best international designers, 600 new arrivals each week, fast and reliable delivery, excellent customer service, utmost security and data protection, and free returns and exchanges within 30 days.
 
-# Tech stacks 
-
-1.HTML
-2.CSS
-3.JS
 
 ## Functionalities Implemented
 
