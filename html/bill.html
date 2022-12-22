@@ -1125,6 +1125,7 @@
       </div>
     </footer>
   </body>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script>
     let getdata = JSON.parse(localStorage.getItem("delivryadd"));
     getdata.forEach((element) => {
@@ -1141,8 +1142,32 @@
     });
 
     setTimeout(()=>{
-window.location.href="/home.html"
-    },5000)
+      window.location.href="/html/user.html"
+    },10000)
+    setTimeout(() => {
+    let timerInterval;
+       Swal.fire({
+           title: "Home page redirecting...",
+           html: "I will close in <b></b> milliseconds.",
+           timer: 3000,
+           timerProgressBar: true,
+           didOpen: () => {
+               Swal.showLoading();
+               const b = Swal.getHtmlContainer().querySelector("b");
+               timerInterval = setInterval(() => {
+                   b.textContent = Swal.getTimerLeft();
+               }, 100);
+           },
+           willClose: () => {
+               clearInterval(timerInterval);
+           },
+       }).then((result) => {
+           /* Read more about handling dismissals below */
+           if (result.dismiss === Swal.DismissReason.timer) {
+               console.log("I was closed by the timer");
+           }
+       });   
+   }, 6000);
   </script>
 </html>
 <script src="/js/main.js"></script>

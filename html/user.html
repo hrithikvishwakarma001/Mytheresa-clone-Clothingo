@@ -37,7 +37,7 @@
 							<div id="right">
 								<ul>
 									<li>Signup for Newsletter</li>
-									<li Onclick="gotohomepage()">SIGN OUT</li>
+									<li Onclick="gotohomepage()" id="singOut">SIGN OUT</li>
 									<li class="wish">
 										My wishlist
 										<span><i class="ri-heart-3-line"></i></span>
@@ -1011,10 +1011,17 @@
 <script src="/js/login.js"></script>
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script>
+
+// singOut
+
+ let disPlayUserName = document.querySelector('#singOut');
+ console.log(disPlayUserName)
+	disPlayUserName.innerHTML = localStorage.getItem('fname');
+
 	function gotohomepage(){
         
 				Swal.fire({
-				title: 'Are you sure?',
+				title: `${localStorage.getItem('fname').split(' ')[0]} are you sure?`,
 				text: "You want to logout!",
 				icon: 'warning',
 				showCancelButton: true,
